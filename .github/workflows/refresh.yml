@@ -3,10 +3,10 @@ name: Weekly pricing refresh
 # ---- WHEN ----------------------------------------------------------
 "on":
   schedule:
-    # Cron has 5 fields: minute hour day-of-month month day-of-week.
-    # "0 6 * * 1" = minute 0, hour 6 (UTC), any day, any month, weekday 1 (Monday).
-    # So: every Monday at 06:00 UTC (11:30 AM IST).
-    - cron: '0 6 * * 1'
+       # Cron has 5 fields: minute hour day-of-month month day-of-week.
+       # "0 6 1 * *" = minute 0, hour 6 (UTC), day 1, any month, any weekday.
+       # So: the 1st of every month at 06:00 UTC (11:30 AM IST).
+    - cron: '0 6 1 * *'
   # This lets you click "Run workflow" in the Actions tab to test on demand,
   # instead of waiting for next Monday. Use this every time you change the script.
   workflow_dispatch: {}
