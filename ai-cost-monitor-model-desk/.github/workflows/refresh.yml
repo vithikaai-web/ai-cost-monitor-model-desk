@@ -1,0 +1,52 @@
+name: Weekly pricing refresh
+
+# ---- WHEN ----------------------------------------------------------
+"on":
+  schedule:
+    # Cron has 5 fields: minute hour day-of-month month day-of-week.
+    # "0 6 * * 1" = minute 0, hour 6 (UTC), any day, any month, weekday 1 (Monday).
+    # So: every Monday at 06:00 UTC (11:30 AM IST).
+    - cron: '0 6 * * 1'
+  # This lets you click "Run workflow" in the Actions tab to test on demand,
+  # instead of waiting for next Monday. Use this every time you change the script.
+  workflow_dispatch: {}
+
+# ---- WHAT MACHINE ---------------------------------------------------
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    # The bot needs permission to push a commit back to this repo.
+    # Without this line, the default token is read-only and the commit step fails.
+    permissions:
+      contents: write
+
+    steps:
+      # 1. Get a copy of the repo onto the runner
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      # 2. Install Python (the runner is a bare Ubuntu box otherwise)
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # 3. Install dependencies (currently none — see scripts/requirements.txt)
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      # 4. Run the actual sync
+      - name: Sync pricing from OpenRouter
+        run: python scripts/fetch_pricing.py
+
+      # 5. Commit only if something actually changed. `git diff --cached --quiet`
+      #    exits non-zero when there ARE staged changes, so `||` runs the commit
+      #    only in that case — an empty week produces no noisy empty commit.
+      - name: Commit and push if changed
+        run: |
+          git config user.name "model-desk-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/models.json data/last_run_diff.md
+          git diff --cached --quiet || git commit -m "Weekly pricing refresh $(date -u +%F)"
+          git push

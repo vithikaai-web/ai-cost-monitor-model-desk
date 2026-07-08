@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Model Desk — AI Pricing &amp; Capability Terminal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{
+    --bg:#0A0C10;
+    --panel:#12151C;
+    --panel2:#161A23;
+    --hairline:#242832;
+    --text:#E8EAED;
+    --muted:#7B8494;
+    --dim:#4B5262;
+    --anthropic:#D97757;
+    --openai:#10A37F;
+    --google:#4285F4;
+    --other:#A78BFA;
+    --amber:#F2C14E;
+    --red:#E5484D;
+    --font-display:'Space Grotesk',sans-serif;
+    --font-body:'Inter',sans-serif;
+    --font-mono:'IBM Plex Mono',monospace;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--font-body);
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--amber);color:#0A0C10;}
+
+  /* ---------- Ticker ---------- */
+  .ticker-wrap{
+    border-bottom:1px solid var(--hairline);
+    background:linear-gradient(180deg,#0D1016,#0A0C10);
+    overflow:hidden;
+    white-space:nowrap;
+    position:relative;
+  }
+  .ticker-wrap::before,.ticker-wrap::after{
+    content:'';position:absolute;top:0;bottom:0;width:40px;z-index:2;pointer-events:none;
+  }
+  .ticker-wrap::before{left:0;background:linear-gradient(90deg,#0A0C10,transparent);}
+  .ticker-wrap::after{right:0;background:linear-gradient(270deg,#0A0C10,transparent);}
+  .ticker{
+    display:inline-flex;
+    animation:scroll 55s linear infinite;
+    padding:9px 0;
+  }
+  .ticker:hover{animation-play-state:paused;}
+  @keyframes scroll{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+  }
+  .tick{
+    font-family:var(--font-mono);
+    font-size:12.5px;
+    padding:0 22px;
+    color:var(--muted);
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    border-right:1px solid var(--hairline);
+  }
+  .tick b{color:var(--text);font-weight:600;}
+  .tick .up{color:#5FD68A;}
+  .tick .down{color:var(--red);}
+  .dot{width:5px;height:5px;border-radius:50%;flex:none;}
+
+  /* ---------- Header ---------- */
+  header{
+    padding:26px 32px 18px;
+    border-bottom:1px solid var(--hairline);
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:14px;
+  }
+  .brand{display:flex;flex-direction:column;gap:2px;}
+  .brand .mark{
+    font-family:var(--font-display);
+    font-weight:700;
+    font-size:23px;
+    letter-spacing:0.2px;
+  }
+  .brand .mark span{color:var(--amber);}
+  .brand .sub{font-family:var(--font-mono);font-size:11.5px;color:var(--muted);letter-spacing:0.4px;}
+  .asof{
+    font-family:var(--font-mono);
+    font-size:11.5px;
+    color:var(--dim);
+    text-align:right;
+  }
+  .asof b{color:var(--muted);font-weight:500;}
+
+  /* ---------- Tabs ---------- */
+  .tabs{
+    display:flex;
+    gap:2px;
+    padding:0 32px;
+    border-bottom:1px solid var(--hairline);
+    background:var(--panel);
+  }
+  .tab{
+    font-family:var(--font-mono);
+    font-size:12.5px;
+    letter-spacing:0.6px;
+    padding:13px 20px;
+    color:var(--muted);
+    cursor:pointer;
+    border-bottom:2px solid transparent;
+    user-select:none;
+  }
+  .tab:hover{color:var(--text);}
+  .tab.active{color:var(--text);border-bottom-color:var(--amber);}
+  .tab .n{color:var(--dim);margin-right:8px;}
+
+  main{padding:26px 32px 60px;max-width:1280px;margin:0 auto;}
+  .view{display:none;}
+  .view.active{display:block;animation:fade .25s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:none;}}
+
+  /* ---------- KPI row ---------- */
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px;}
+  .kpi{
+    background:var(--panel);
+    border:1px solid var(--hairline);
+    border-radius:3px;
+    padding:16px 18px;
+  }
+  .kpi .lbl{font-family:var(--font-mono);font-size:10.5px;letter-spacing:0.5px;color:var(--muted);text-transform:uppercase;}
+  .kpi .val{font-family:var(--font-display);font-size:24px;font-weight:600;margin-top:6px;}
+  .kpi .foot{font-family:var(--font-mono);font-size:11px;color:var(--dim);margin-top:4px;}
+  .kpi .val em{font-style:normal;color:var(--amber);}
+
+  /* ---------- Panels / controls ---------- */
+  .panel{
+    background:var(--panel);
+    border:1px solid var(--hairline);
+    border-radius:3px;
+    margin-bottom:20px;
+  }
+  .panel-head{
+    display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;
+    padding:14px 18px;border-bottom:1px solid var(--hairline);
+  }
+  .panel-head h2{
+    font-family:var(--font-display);font-size:14.5px;margin:0;font-weight:600;letter-spacing:0.2px;
+  }
+  .panel-head p{font-family:var(--font-body);font-size:12px;color:var(--muted);margin:3px 0 0;}
+  .panel-body{padding:18px;}
+
+  .chips{display:flex;gap:6px;flex-wrap:wrap;}
+  .chip{
+    font-family:var(--font-mono);font-size:11px;letter-spacing:0.3px;
+    padding:5px 11px;border-radius:20px;border:1px solid var(--hairline);
+    color:var(--muted);cursor:pointer;background:transparent;
+  }
+  .chip:hover{color:var(--text);border-color:var(--dim);}
+  .chip.on{color:#0A0C10;background:var(--amber);border-color:var(--amber);font-weight:600;}
+
+  canvas{max-width:100%;}
+
+  /* ---------- Table ---------- */
+  table{width:100%;border-collapse:collapse;font-family:var(--font-mono);font-size:12px;}
+  thead th{
+    text-align:left;font-weight:500;color:var(--muted);text-transform:uppercase;letter-spacing:0.4px;
+    font-size:10.5px;padding:8px 10px;border-bottom:1px solid var(--hairline);cursor:pointer;white-space:nowrap;
+  }
+  thead th:hover{color:var(--text);}
+  thead th.active-sort{color:var(--amber);}
+  tbody td{padding:9px 10px;border-bottom:1px solid #1B1F28;white-space:nowrap;}
+  tbody tr:hover{background:var(--panel2);}
+  .prov-badge{
+    display:inline-flex;align-items:center;gap:6px;font-family:var(--font-body);font-size:12px;font-weight:500;
+  }
+  .prov-badge .dot{width:7px;height:7px;border-radius:50%;}
+  .tier-flagship{color:var(--amber);}
+  .tier-budget{color:#5FD68A;}
+  .tier-mid{color:var(--text);}
+  .tier-reasoning{color:var(--other);}
+  .num{text-align:right;}
+  .table-scroll{max-height:520px;overflow:auto;border-top:1px solid var(--hairline);margin-top:2px;}
+  .table-scroll table thead th{position:sticky;top:0;background:var(--panel);z-index:1;}
+
+  /* ---------- Capability tab ---------- */
+  .usecase-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;}
+  .uc-card{
+    background:var(--panel);border:1px solid var(--hairline);border-radius:3px;padding:18px;
+  }
+  .uc-card .icon-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
+  .uc-card h3{font-family:var(--font-display);font-size:15px;margin:0;font-weight:600;}
+  .uc-card .badge{
+    font-family:var(--font-mono);font-size:9.5px;letter-spacing:0.4px;color:var(--dim);border:1px solid var(--hairline);
+    padding:2px 7px;border-radius:12px;text-transform:uppercase;
+  }
+  .uc-card p.desc{font-size:12.5px;color:var(--muted);line-height:1.5;margin:0 0 12px;}
+  .pick{
+    display:flex;align-items:center;gap:9px;padding:7px 0;border-top:1px solid #1B1F28;
+  }
+  .pick:first-of-type{border-top:none;}
+  .pick .dot{width:7px;height:7px;border-radius:50%;flex:none;}
+  .pick .name{font-family:var(--font-mono);font-size:12.5px;font-weight:500;}
+  .pick .why{font-size:11.5px;color:var(--muted);}
+
+  footer{
+    padding:22px 32px 40px;color:var(--dim);font-family:var(--font-mono);font-size:11px;line-height:1.7;
+    max-width:1280px;margin:0 auto;border-top:1px solid var(--hairline);
+  }
+  footer a{color:var(--muted);}
+
+  @media (max-width:760px){
+    .kpis{grid-template-columns:repeat(2,1fr);}
+    header{padding:20px 16px;}
+    .tabs{padding:0 16px;overflow-x:auto;}
+    main{padding:18px 16px 40px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="ticker-wrap"><div class="ticker" id="tickerEl"></div></div>
+
+<header>
+  <div class="brand">
+    <div class="mark">MODEL<span>DESK</span></div>
+    <div class="sub">CROSS-LAB LLM COST &amp; CAPABILITY TERMINAL</div>
+  </div>
+  <div class="asof">Snapshot compiled <b id="asofDate">loading…</b> · <span id="asofCount">loading…</span><br>Prices are list rates, USD per 1M tokens, before caching/batch discounts</div>
+</header>
+
+<div id="loadStatus" style="display:none;background:#2A1414;border:1px solid var(--red);color:#F2AEB1;font-family:var(--font-mono);font-size:12.5px;padding:12px 32px;line-height:1.6;"></div>
+
+<div class="tabs">
+  <div class="tab active" data-view="cost"><span class="n">01</span>COST MONITOR</div>
+  <div class="tab" data-view="capability"><span class="n">02</span>CAPABILITY MAP</div>
+</div>
+
+<main>
+
+  <!-- ================= VIEW 1: COST MONITOR ================= -->
+  <div class="view active" id="view-cost">
+
+    <div class="kpis" id="kpiRow"></div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Flagship price trend, input token cost</h2>
+          <p>Each lab's top-tier model, at time of release — the sticker price for "best available" has been falling all cycle</p>
+        </div>
+        <div class="chips" id="trendChips"></div>
+      </div>
+      <div class="panel-body"><canvas id="trendChart" height="90"></canvas></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Current snapshot — all tracked models</h2>
+          <p>Input vs output price per 1M tokens, cheapest to most expensive</p>
+        </div>
+        <div class="chips" id="barChips"></div>
+      </div>
+      <div class="panel-body"><canvas id="barChart" height="150"></canvas></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Context window growth</h2>
+          <p>Largest generally-available context window per lab, over time</p>
+        </div>
+      </div>
+      <div class="panel-body"><canvas id="ctxChart" height="80"></canvas></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Full model table</h2>
+          <p>Click a column to sort · filter by lab below</p>
+        </div>
+        <div class="chips" id="tableChips"></div>
+      </div>
+      <div class="table-scroll">
+        <table id="modelTable">
+          <thead>
+            <tr>
+              <th data-key="provider">Lab</th>
+              <th data-key="name">Model</th>
+              <th data-key="tier">Tier</th>
+              <th data-key="date">Released</th>
+              <th data-key="input" class="num">Input $/M</th>
+              <th data-key="output" class="num">Output $/M</th>
+              <th data-key="context" class="num">Context</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= VIEW 2: CAPABILITY MAP ================= -->
+  <div class="view" id="view-capability">
+    <div class="panel" style="margin-bottom:22px;">
+      <div class="panel-body" style="font-size:13px;color:var(--muted);line-height:1.6;">
+        Model quality shifts every few weeks — this is a directional map of which current-generation model tends to lead each job-to-be-done, not a permanent ranking. Re-check before locking a production router.
+      </div>
+    </div>
+    <div class="usecase-grid" id="usecaseGrid"></div>
+  </div>
+
+</main>
+
+<footer>
+  DATA &amp; METHODOLOGY — This dashboard is a curated snapshot, not a live feed: no provider publishes a unified pricing API, so every public tracker (including this one) is assembled by hand or scraped from pricing pages. To keep this current yourself: (1) re-run this research monthly and edit the MODELS array at the top of this file's script — it's plain JSON, built to be extended; (2) for automated tracking, point a scheduled job at community-maintained feeds such as openrouter.ai/models (has a models API), the DeepSeek/OpenAI/Anthropic/Google pricing pages directly, or aggregators like aipricing.guru and pricepertoken.com which publish raw JSON; (3) for usage/spend rather than list price, pull actuals from your own provider console or billing export (Anthropic Console usage API, OpenAI usage API, Google Cloud Billing export) rather than list prices, since caching/batching/regional multipliers change effective cost substantially. All figures here are list API rates as published or reported in trade press as of early July 2026; verify against the provider's own pricing page before budgeting.
+</footer>
+
+<script>
+/* =========================================================
+   DATA — edit this array to add models / update prices later
+   provider: Anthropic | OpenAI | Google | DeepSeek | xAI | Meta | Mistral
+   tier: flagship | mid | budget | reasoning | legacy
+   input/output: USD per 1,000,000 tokens (list, standard, non-batch)
+   context: token window (numeric)
+========================================================= */
+const PROV_COLOR = {
+  Anthropic:'#D97757', OpenAI:'#10A37F', Google:'#4285F4',
+  DeepSeek:'#A78BFA', xAI:'#F2C14E', Meta:'#5FD68A', Mistral:'#7B8494',
+  'Moonshot AI':'#2D3EE0', 'Zhipu AI':'#14B8A6', MiniMax:'#EF4444', Alibaba:'#FF6A00'
+};
+
+let MODELS = [];
+
+async function loadModels(){
+  const statusEl = document.getElementById('loadStatus');
+  try{
+    const res = await fetch('./data/models.json', {cache:'no-store'});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const payload = await res.json();
+    MODELS = payload.models;
+    document.getElementById('asofDate').textContent = payload.generatedAt;
+    document.getElementById('asofCount').textContent =
+      MODELS.length + ' models \u00b7 ' + new Set(MODELS.map(m=>m.provider)).size + ' labs';
+  }catch(err){
+    // Classic gotcha: this fetch fails with a CORS/file-access error if you just
+    // double-click index.html (file:// has no server behind it, so relative
+    // fetches are blocked). Serve it — `python3 -m http.server` locally, or
+    // GitHub Pages in production — and this error should never show.
+    statusEl.style.display = 'block';
+    statusEl.innerHTML = 'Could not load <code>data/models.json</code> (' + err.message + ').'
+      + ' If you just opened this file directly in a browser, that\'s the cause \u2014'
+      + ' fetch() needs a real server. Run <code>python3 -m http.server</code> in this'
+      + ' folder and open <code>http://localhost:8000</code> instead.';
+    throw err;
+  }
+}
+
+// Flagship-only series for the trend line (one point per lab per generation, roughly release order)
+// NOTE: this must be computed AFTER loadModels() resolves, not at parse time —
+// MODELS starts empty (fetched async), so this is a function, not a top-level const.
+function computeFlagshipTrend(){
+  return {
+    Anthropic: MODELS.filter(m=>m.provider==='Anthropic' && ['Claude 3 Opus','Claude Opus 4','Claude Opus 4.1','Claude Opus 4.6','Claude Opus 4.7','Claude Opus 4.8','Claude Fable 5'].includes(m.name)),
+    OpenAI: MODELS.filter(m=>m.provider==='OpenAI' && ['GPT-4','GPT-4o','GPT-4.1','GPT-5.4','GPT-5.5','GPT-5.6 Sol'].includes(m.name)),
+    Google: MODELS.filter(m=>m.provider==='Google' && ['Gemini 1.5 Pro','Gemini 2.5 Pro','Gemini 3.1 Pro'].includes(m.name)),
+    DeepSeek: MODELS.filter(m=>m.provider==='DeepSeek'),
+    xAI: MODELS.filter(m=>m.provider==='xAI' && ['Grok 3','Grok 4','Grok 4.3'].includes(m.name)),
+    'Moonshot AI': MODELS.filter(m=>m.provider==='Moonshot AI'),
+    'Zhipu AI': MODELS.filter(m=>m.provider==='Zhipu AI' && ['GLM 4.7','GLM 5.0','GLM 5.1'].includes(m.name)),
+  };
+}
+let FLAGSHIP_TREND = {}; // populated in init(), after data/models.json loads
+
+const CTX_GROWTH = {
+  Anthropic:[['2024-03',200000],['2025-09',1000000],['2026-06',1000000]],
+  OpenAI:[['2024-05',128000],['2025-04',1000000],['2026-03',1050000]],
+  Google:[['2024-05',2000000],['2025-03',1000000],['2026-02',2000000]],
+  DeepSeek:[['2024-12',128000],['2026-04',1000000]],
+  xAI:[['2025-02',128000],['2025-11',2000000],['2026-04',1000000]],
+  'Moonshot AI':[['2025-07',128000],['2026-01',256000],['2026-04',256000]],
+  'Zhipu AI':[['2026-01',202752],['2026-05',200000]],
+};
+
+const USE_CASES = [
+  {
+    title:'Coding & agentic software work',
+    badge:'agents',
+    desc:'Multi-file refactors, long-running agent loops, tool-heavy workflows. Weigh iteration cost, not just per-token price — a model that fails less needs fewer retries.',
+    picks:[
+      {provider:'Anthropic',name:'Claude Opus 4.8 / Sonnet 4.6',why:'Anthropic\'s strongest coding line; Opus 4.8 specifically tuned to catch its own bugs before they compound'},
+      {provider:'OpenAI',name:'GPT-5.3 Codex / GPT-5.5',why:'Dedicated coding-agent endpoint plus a general flagship, both 1M+ context'},
+      {provider:'DeepSeek',name:'DeepSeek V4 Pro',why:'Near-frontier SWE-bench score at roughly 1/28th Opus\'s output price'},
+      {provider:'Moonshot AI',name:'Kimi K2.6',why:'Open-weight agent model built for long-horizon coding and 300-agent swarms at a fraction of Western flagship pricing'},
+    ]
+  },
+  {
+    title:'Deep reasoning, math & science',
+    badge:'reasoning',
+    desc:'Multi-step proofs, scientific analysis, hard logic chains where thinking budget matters more than speed.',
+    picks:[
+      {provider:'OpenAI',name:'o3',why:'Purpose-built reasoning model, still the reference point for structured multi-step logic'},
+      {provider:'Anthropic',name:'Claude Opus 4.8 (extended thinking)',why:'Adaptive thinking scales effort automatically on harder prompts'},
+      {provider:'Google',name:'Gemini 3.1 Pro (Deep Think)',why:'Extended-reasoning mode paired with the largest context window in production'},
+    ]
+  },
+  {
+    title:'Long-document & research synthesis',
+    badge:'long-context',
+    desc:'Ingesting entire codebases, contract sets, or research corpora in a single call without chunking.',
+    picks:[
+      {provider:'Google',name:'Gemini 3.1 Pro',why:'2M token window is the largest of any Tier-1 provider today'},
+      {provider:'xAI',name:'Grok 4.1 Fast / multi-agent',why:'2M context at budget pricing, built for parallel long-context agents'},
+      {provider:'Anthropic',name:'Claude Sonnet 4.6 / Opus 4.8',why:'1M context with strong caching economics for repeated large documents'},
+    ]
+  },
+  {
+    title:'High-volume classification & extraction',
+    badge:'budget',
+    desc:'Routing, tagging, structured extraction, simple summarization at scale — cost per call matters more than peak intelligence.',
+    picks:[
+      {provider:'DeepSeek',name:'DeepSeek V4 Flash',why:'Cheapest frontier-class model on the market, cache hits nearly free'},
+      {provider:'Anthropic',name:'Claude Haiku 4.5',why:'Cheapest current Claude tier, still 1M-context capable on request'},
+      {provider:'OpenAI',name:'GPT-5.4 nano / mini',why:'150x price spread between nano and Pro gives a lot of routing headroom'},
+      {provider:'Google',name:'Gemini 3.1 Flash-Lite / 2.5 Flash-Lite',why:'Flat pricing regardless of context length, generous free tier for prototyping'},
+      {provider:'Zhipu AI',name:'GLM 4.7 Flash',why:'Listed free on the API for text tasks — no per-token cost at all for routine completion and formatting'},
+    ]
+  },
+  {
+    title:'Multimodal (vision, audio, video)',
+    badge:'multimodal',
+    desc:'Native image, audio, or video understanding and generation in one model rather than a separate pipeline.',
+    picks:[
+      {provider:'Google',name:'Gemini 3.5 Flash / 3.1 Pro',why:'Native text/image/audio/video input, plus image and video generation in the same family'},
+      {provider:'OpenAI',name:'GPT-5.5',why:'Strong image understanding, integrated with image-gen tools in the same account'},
+      {provider:'Anthropic',name:'Claude Opus 4.8',why:'Strong document and chart vision, weaker on generation — best for reading, not creating, images'},
+    ]
+  },
+  {
+    title:'Everyday conversational assistant',
+    badge:'default',
+    desc:'What each lab actually defaults to for its own consumer chat product — a signal of where they think the best cost/quality tradeoff sits today.',
+    picks:[
+      {provider:'Anthropic',name:'Claude Sonnet 5',why:'New default on Claude.ai Free and Pro as of June 30, 2026'},
+      {provider:'OpenAI',name:'GPT-5.5 Instant',why:'Default in ChatGPT since May 5, 2026; notably lower hallucination rate on high-stakes prompts'},
+      {provider:'Google',name:'Gemini 3.5 Flash',why:'Positioned as the fast, free-tier-eligible default across the Gemini app'},
+    ]
+  },
+  {
+    title:'Budget-conscious frontier-adjacent',
+    badge:'value',
+    desc:'When you want near-frontier capability but the bill has to stay small — good for bootstrapped products or very high call volumes.',
+    picks:[
+      {provider:'DeepSeek',name:'DeepSeek V4 Flash / Pro',why:'35–100x cheaper than Western flagships at comparable coding benchmark scores'},
+      {provider:'xAI',name:'Grok 4.1 Fast',why:'2M context, reasoning-capable, among the cheapest per-token rates from any major lab'},
+      {provider:'Mistral',name:'Mistral Small / Large 3',why:'Consistently near the bottom of the pricing table among labs with enterprise support'},
+      {provider:'MiniMax',name:'MiniMax M2.7',why:'Agent-centric open-weight model at $0.30/$1.20 per million — Claude-Opus-class agent benchmarks at roughly 5% of Opus\'s output cost'},
+      {provider:'Moonshot AI',name:'Kimi K2.5',why:'Cheaper multimodal Kimi tier when you don\'t need K2.6\'s newest vision/coding gains'},
+    ]
+  },
+];
+
+/* ============ RENDER: TICKER ============ */
+function renderTicker(){
+  const latest = {};
+  MODELS.forEach(m=>{
+    if(!latest[m.provider] || new Date(m.date) > new Date(latest[m.provider].date)) latest[m.provider]=m;
+  });
+  const items = Object.values(latest).map(m=>{
+    return `<div class="tick"><span class="dot" style="background:${PROV_COLOR[m.provider]}"></span>${m.provider} <b>${m.name}</b> $${m.input}/$${m.output} per M · ${fmtCtx(m.context)} ctx</div>`;
+  });
+  const html = items.join('') ;
+  document.getElementById('tickerEl').innerHTML = html + html; // duplicate for seamless loop
+}
+
+function fmtCtx(n){
+  if(n>=1000000) return (n/1000000)+'M';
+  if(n>=1000) return Math.round(n/1000)+'K';
+  return n;
+}
+
+/* ============ RENDER: KPIs ============ */
+function renderKPIs(){
+  const cheapestIn = MODELS.reduce((a,b)=>b.input<a.input?b:a);
+  const priciestOut = MODELS.reduce((a,b)=>b.output>a.output?b:a);
+  const biggestCtx = MODELS.reduce((a,b)=>b.context>a.context?b:a);
+  const newest = MODELS.reduce((a,b)=>new Date(b.date)>new Date(a.date)?b:a);
+  const kpis = [
+    {lbl:'Cheapest input', val:'$'+cheapestIn.input+'/M', foot:cheapestIn.provider+' · '+cheapestIn.name},
+    {lbl:'Priciest output', val:'$'+priciestOut.output+'/M', foot:priciestOut.provider+' · '+priciestOut.name},
+    {lbl:'Largest context', val:fmtCtx(biggestCtx.context), foot:biggestCtx.provider+' · '+biggestCtx.name},
+    {lbl:'Newest release', val:newest.date, foot:newest.provider+' · '+newest.name},
+  ];
+  document.getElementById('kpiRow').innerHTML = kpis.map(k=>`
+    <div class="kpi">
+      <div class="lbl">${k.lbl}</div>
+      <div class="val"><em>${k.val}</em></div>
+      <div class="foot">${k.foot}</div>
+    </div>`).join('');
+}
+
+/* ============ RENDER: Trend chart ============ */
+let trendChart, barChart, ctxChart;
+let activeProvidersTrend = new Set(); // populated in init(), once FLAGSHIP_TREND is computed
+
+function renderTrendChips(){
+  const el = document.getElementById('trendChips');
+  el.innerHTML = Object.keys(FLAGSHIP_TREND).map(p=>
+    `<button class="chip on" data-p="${p}" style="border-color:${PROV_COLOR[p]}55">${p}</button>`
+  ).join('');
+  el.querySelectorAll('.chip').forEach(c=>{
+    c.addEventListener('click',()=>{
+      const p = c.dataset.p;
+      if(activeProvidersTrend.has(p)){activeProvidersTrend.delete(p); c.classList.remove('on');}
+      else {activeProvidersTrend.add(p); c.classList.add('on');}
+      drawTrendChart();
+    });
+  });
+}
+
+function drawTrendChart(){
+  const active = Object.entries(FLAGSHIP_TREND).filter(([p])=>activeProvidersTrend.has(p));
+  // union of every date across active series, sorted, used as the shared category axis
+  const allDates = [...new Set(active.flatMap(([,arr])=>arr.map(m=>m.date)))].sort();
+  const datasets = active.map(([p,arr])=>{
+    const byDate = Object.fromEntries(arr.map(m=>[m.date,m.input]));
+    return {
+      label:p,
+      data: allDates.map(d=> d in byDate ? byDate[d] : null),
+      spanGaps:true,
+      borderColor: PROV_COLOR[p],
+      backgroundColor: PROV_COLOR[p],
+      tension:0.25,
+      pointRadius: allDates.map(d=> d in byDate ? 4 : 0),
+      pointHoverRadius:6,
+      borderWidth:2,
+    };
+  });
+  if(trendChart) trendChart.destroy();
+  trendChart = new Chart(document.getElementById('trendChart'), {
+    type:'line',
+    data:{labels:allDates, datasets},
+    options:{
+      responsive:true,
+      interaction:{mode:'nearest',intersect:false},
+      plugins:{
+        legend:{display:false},
+        tooltip:{
+          callbacks:{
+            label:(ctx)=> ctx.parsed.y===null ? null : `${ctx.dataset.label}: $${ctx.parsed.y}/M input`
+          }
+        }
+      },
+      scales:{
+        x:{grid:{color:'#1B1F28'}, ticks:{color:'#7B8494',font:{family:'IBM Plex Mono',size:10}}},
+        y:{grid:{color:'#1B1F28'}, ticks:{color:'#7B8494',font:{family:'IBM Plex Mono',size:10},callback:v=>'$'+v}}
+      }
+    }
+  });
+}
+
+/* ============ RENDER: Bar chart (snapshot) ============ */
+let activeProvidersBar = new Set(Object.keys(PROV_COLOR));
+function renderBarChips(){
+  const el = document.getElementById('barChips');
+  el.innerHTML = Object.keys(PROV_COLOR).map(p=>
+    `<button class="chip on" data-p="${p}">${p}</button>`
+  ).join('');
+  el.querySelectorAll('.chip').forEach(c=>{
+    c.addEventListener('click',()=>{
+      const p = c.dataset.p;
+      if(activeProvidersBar.has(p)){activeProvidersBar.delete(p); c.classList.remove('on');}
+      else {activeProvidersBar.add(p); c.classList.add('on');}
+      drawBarChart();
+    });
+  });
+}
+function drawBarChart(){
+  const rows = MODELS.filter(m=>activeProvidersBar.has(m.provider)).sort((a,b)=>a.input-b.input);
+  if(barChart) barChart.destroy();
+  barChart = new Chart(document.getElementById('barChart'),{
+    type:'bar',
+    data:{
+      labels: rows.map(m=>m.name),
+      datasets:[
+        {label:'Input $/M', data:rows.map(m=>m.input), backgroundColor: rows.map(m=>PROV_COLOR[m.provider]+'CC')},
+        {label:'Output $/M', data:rows.map(m=>m.output), backgroundColor: rows.map(m=>PROV_COLOR[m.provider]+'44')},
+      ]
+    },
+    options:{
+      responsive:true,
+      indexAxis:'y',
+      plugins:{legend:{labels:{color:'#7B8494',font:{family:'IBM Plex Mono',size:11}}}},
+      scales:{
+        x:{type:'logarithmic',grid:{color:'#1B1F28'},ticks:{color:'#7B8494',font:{family:'IBM Plex Mono',size:10},callback:v=>'$'+v}},
+        y:{grid:{display:false},ticks:{color:'#9099A8',font:{family:'IBM Plex Mono',size:10}}}
+      }
+    }
+  });
+  document.getElementById('barChart').parentElement.style.height = Math.max(300, rows.length*22)+'px';
+  barChart.resize();
+}
+
+/* ============ RENDER: Context growth chart ============ */
+function drawCtxChart(){
+  const allDates = [...new Set(Object.values(CTX_GROWTH).flatMap(arr=>arr.map(([d])=>d)))].sort();
+  const datasets = Object.entries(CTX_GROWTH).map(([p,arr])=>{
+    const byDate = Object.fromEntries(arr.map(([d,v])=>[d,v]));
+    // carry the last known value forward so the step line reads correctly on shared axis
+    let last = null;
+    const data = allDates.map(d=>{
+      if(d in byDate){ last = byDate[d]; return last; }
+      return last;
+    });
+    return {
+      label:p,
+      data,
+      spanGaps:true,
+      borderColor:PROV_COLOR[p],
+      backgroundColor:PROV_COLOR[p],
+      stepped:'before',
+      pointRadius: allDates.map(d=> d in byDate ? 4 : 0),
+      borderWidth:2,
+    };
+  });
+  ctxChart = new Chart(document.getElementById('ctxChart'),{
+    type:'line',
+    data:{labels:allDates, datasets},
+    options:{
+      responsive:true,
+      plugins:{legend:{labels:{color:'#7B8494',font:{family:'IBM Plex Mono',size:11}}}},
+      scales:{
+        x:{grid:{color:'#1B1F28'},ticks:{color:'#7B8494',font:{family:'IBM Plex Mono',size:10}}},
+        y:{grid:{color:'#1B1F28'},ticks:{color:'#7B8494',font:{family:'IBM Plex Mono',size:10},callback:v=>fmtCtx(v)}}
+      }
+    }
+  });
+}
+
+/* ============ RENDER: Table ============ */
+let sortKey='input', sortDir=1;
+let tableFilter = new Set(Object.keys(PROV_COLOR));
+
+function renderTableChips(){
+  const el = document.getElementById('tableChips');
+  el.innerHTML = Object.keys(PROV_COLOR).map(p=>
+    `<button class="chip on" data-p="${p}">${p}</button>`
+  ).join('');
+  el.querySelectorAll('.chip').forEach(c=>{
+    c.addEventListener('click',()=>{
+      const p = c.dataset.p;
+      if(tableFilter.has(p)){tableFilter.delete(p); c.classList.remove('on');}
+      else {tableFilter.add(p); c.classList.add('on');}
+      drawTable();
+    });
+  });
+}
+
+function drawTable(){
+  let rows = MODELS.filter(m=>tableFilter.has(m.provider));
+  rows.sort((a,b)=>{
+    let av=a[sortKey], bv=b[sortKey];
+    if(typeof av==='string') return av.localeCompare(bv)*sortDir;
+    return (av-bv)*sortDir;
+  });
+  document.getElementById('tableBody').innerHTML = rows.map(m=>`
+    <tr>
+      <td><span class="prov-badge"><span class="dot" style="background:${PROV_COLOR[m.provider]}"></span>${m.provider}</span></td>
+      <td>${m.name}</td>
+      <td class="tier-${m.tier}">${m.tier}</td>
+      <td>${m.date}</td>
+      <td class="num">$${m.input}</td>
+      <td class="num">$${m.output}</td>
+      <td class="num">${fmtCtx(m.context)}</td>
+    </tr>
+  `).join('');
+  document.querySelectorAll('#modelTable thead th').forEach(th=>{
+    th.classList.toggle('active-sort', th.dataset.key===sortKey);
+  });
+}
+
+document.querySelectorAll('#modelTable thead th').forEach(th=>{
+  th.addEventListener('click',()=>{
+    const key = th.dataset.key;
+    if(sortKey===key) sortDir*=-1; else {sortKey=key; sortDir=1;}
+    drawTable();
+  });
+});
+
+/* ============ RENDER: Capability tab ============ */
+function renderUseCases(){
+  document.getElementById('usecaseGrid').innerHTML = USE_CASES.map(uc=>`
+    <div class="uc-card">
+      <div class="icon-row">
+        <h3>${uc.title}</h3>
+        <span class="badge">${uc.badge}</span>
+      </div>
+      <p class="desc">${uc.desc}</p>
+      ${uc.picks.map(p=>`
+        <div class="pick">
+          <span class="dot" style="background:${PROV_COLOR[p.provider]}"></span>
+          <div>
+            <div class="name">${p.name}</div>
+            <div class="why">${p.why}</div>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `).join('');
+}
+
+/* ============ Tabs ============ */
+document.querySelectorAll('.tab').forEach(tab=>{
+  tab.addEventListener('click',()=>{
+    document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+    document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('view-'+tab.dataset.view).classList.add('active');
+  });
+});
+
+/* ============ Init ============ */
+async function init(){
+  try{
+    await loadModels();          // Store -> Serve: wait for data/models.json before drawing anything
+  }catch(err){
+    console.error('Dashboard init aborted:', err);
+    return;                      // error banner already shown by loadModels()
+  }
+  FLAGSHIP_TREND = computeFlagshipTrend();     // must happen after MODELS is populated
+  activeProvidersTrend = new Set(Object.keys(FLAGSHIP_TREND));
+  renderTicker();
+  renderKPIs();
+  renderTrendChips();
+  drawTrendChart();
+  renderBarChips();
+  drawBarChart();
+  drawCtxChart();
+  renderTableChips();
+  drawTable();
+  renderUseCases();
+}
+init();
+</script>
+</body>
+</html>

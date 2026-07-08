@@ -1,0 +1,4 @@
+# Intentionally empty for now — fetch_pricing.py uses only Python's
+# standard library (urllib, json, pathlib), so there's nothing to install.
+# If you later add a package (e.g. `requests` for nicer error handling,
+# or `pandas` for richer diffing), list it here — one per line.
