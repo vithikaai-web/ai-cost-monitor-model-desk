@@ -1,4 +1,4 @@
-name: Weekly pricing refresh
+name: Monthly pricing refresh
 
 # ---- WHEN ----------------------------------------------------------
 "on":
