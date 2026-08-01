@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08",
+  "generatedAt": "2026-08-01",
   "models": [
     {
       "provider": "Anthropic",
@@ -1025,7 +1025,7 @@
       "context": 500000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "x-ai/grok-4.5"
     },
     {
@@ -1038,7 +1038,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "anthropic/claude-sonnet-5"
     },
     {
@@ -1051,7 +1051,7 @@
       "context": 65536,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemini-3.1-flash-lite-image"
     },
     {
@@ -1064,7 +1064,7 @@
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemini-3.1-flash-image"
     },
     {
@@ -1074,10 +1074,10 @@
       "date": "2026-07-08",
       "input": 2.0,
       "output": 12.0,
-      "context": 65536,
+      "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemini-3-pro-image"
     },
     {
@@ -1085,12 +1085,12 @@
       "name": "Z.ai: GLM 5.2",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.42,
-      "output": 1.32,
+      "input": 0.7601,
+      "output": 2.3888,
       "context": 1048576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "z-ai/glm-5.2"
     },
     {
@@ -1098,12 +1098,12 @@
       "name": "MoonshotAI: Kimi K2.7 Code",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.74,
+      "input": 0.73,
       "output": 3.5,
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "moonshotai/kimi-k2.7-code"
     },
     {
@@ -1116,7 +1116,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "anthropic/claude-fable-5"
     },
     {
@@ -1129,7 +1129,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3.7-plus"
     },
     {
@@ -1142,7 +1142,7 @@
       "context": 1048576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "minimax/minimax-m3"
     },
     {
@@ -1155,7 +1155,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "anthropic/claude-opus-4.8-fast"
     },
     {
@@ -1168,7 +1168,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "anthropic/claude-opus-4.8"
     },
     {
@@ -1176,12 +1176,12 @@
       "name": "Qwen: Qwen3.7 Max",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 1.25,
-      "output": 3.75,
+      "input": 1.475,
+      "output": 4.425,
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3.7-max"
     },
     {
@@ -1194,7 +1194,7 @@
       "context": 256000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "x-ai/grok-build-0.1"
     },
     {
@@ -1207,7 +1207,7 @@
       "context": 1048576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemini-3.5-flash"
     },
     {
@@ -1220,7 +1220,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "anthropic/claude-opus-4.7-fast"
     },
     {
@@ -1233,7 +1233,7 @@
       "context": 1048576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemini-3.1-flash-lite"
     },
     {
@@ -1246,7 +1246,7 @@
       "context": 400000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-chat-latest"
     },
     {
@@ -1259,7 +1259,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "x-ai/grok-4.3"
     },
     {
@@ -1272,7 +1272,7 @@
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "mistralai/mistral-medium-3-5"
     },
     {
@@ -1285,7 +1285,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3.5-plus-20260420"
     },
     {
@@ -1298,7 +1298,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3.6-flash"
     },
     {
@@ -1311,7 +1311,7 @@
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3.6-35b-a3b"
     },
     {
@@ -1319,12 +1319,12 @@
       "name": "Qwen: Qwen3.6 Max Preview",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 1.04,
-      "output": 6.24,
+      "input": 1.027,
+      "output": 6.162,
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3.6-max-preview"
     },
     {
@@ -1332,12 +1332,12 @@
       "name": "Qwen: Qwen3.6 27B",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.285,
-      "output": 2.4,
+      "input": 0.3,
+      "output": 2.0,
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3.6-27b"
     },
     {
@@ -1350,7 +1350,7 @@
       "context": 1050000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5.5-pro"
     },
     {
@@ -1363,7 +1363,7 @@
       "context": 1050000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5.5"
     },
     {
@@ -1376,7 +1376,7 @@
       "context": 1048576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "deepseek/deepseek-v4-pro"
     },
     {
@@ -1384,12 +1384,12 @@
       "name": "DeepSeek: DeepSeek V4 Flash",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.09,
-      "output": 0.18,
+      "input": 0.14,
+      "output": 0.28,
       "context": 1048576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "deepseek/deepseek-v4-flash"
     },
     {
@@ -1402,7 +1402,7 @@
       "context": 272000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5.4-image-2"
     },
     {
@@ -1410,12 +1410,12 @@
       "name": "MoonshotAI: Kimi K2.6",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.65,
+      "input": 0.6,
       "output": 3.41,
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "moonshotai/kimi-k2.6"
     },
     {
@@ -1428,7 +1428,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "anthropic/claude-opus-4.7"
     },
     {
@@ -1438,10 +1438,10 @@
       "date": "2026-07-08",
       "input": 0.966,
       "output": 3.036,
-      "context": 202752,
+      "context": 204800,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "z-ai/glm-5.1"
     },
     {
@@ -1449,12 +1449,12 @@
       "name": "Google: Gemma 4 26B A4B ",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.06,
-      "output": 0.33,
+      "input": 0.07,
+      "output": 0.34,
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemma-4-26b-a4b-it"
     },
     {
@@ -1462,12 +1462,12 @@
       "name": "Google: Gemma 4 31B",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.12,
-      "output": 0.35,
+      "input": 0.1,
+      "output": 0.34,
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemma-4-31b-it"
     },
     {
@@ -1480,7 +1480,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3.6-plus"
     },
     {
@@ -1493,7 +1493,7 @@
       "context": 202752,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "z-ai/glm-5v-turbo"
     },
     {
@@ -1506,7 +1506,7 @@
       "context": 2000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "x-ai/grok-4.20-multi-agent"
     },
     {
@@ -1519,7 +1519,7 @@
       "context": 2000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "x-ai/grok-4.20"
     },
     {
@@ -1527,12 +1527,12 @@
       "name": "MiniMax: MiniMax M2.7",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.18,
-      "output": 0.72,
+      "input": 0.25,
+      "output": 1.0,
       "context": 204800,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "minimax/minimax-m2.7"
     },
     {
@@ -1545,7 +1545,7 @@
       "context": 400000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5.4-nano"
     },
     {
@@ -1558,7 +1558,7 @@
       "context": 400000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5.4-mini"
     },
     {
@@ -1571,7 +1571,7 @@
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "mistralai/mistral-small-2603"
     },
     {
@@ -1581,10 +1581,10 @@
       "date": "2026-07-08",
       "input": 1.2,
       "output": 4.0,
-      "context": 262144,
+      "context": 202752,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "z-ai/glm-5-turbo"
     },
     {
@@ -1597,7 +1597,7 @@
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3.5-9b"
     },
     {
@@ -1610,7 +1610,7 @@
       "context": 1050000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5.4-pro"
     },
     {
@@ -1623,7 +1623,7 @@
       "context": 1050000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5.4"
     },
     {
@@ -1636,7 +1636,7 @@
       "context": 128000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5.3-chat"
     },
     {
@@ -1649,7 +1649,7 @@
       "context": 1048576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemini-3.1-flash-lite-preview"
     },
     {
@@ -1659,10 +1659,10 @@
       "date": "2026-07-08",
       "input": 0.5,
       "output": 3.0,
-      "context": 131072,
+      "context": 65536,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemini-3.1-flash-image-preview"
     },
     {
@@ -1675,7 +1675,7 @@
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3.5-35b-a3b"
     },
     {
@@ -1688,7 +1688,7 @@
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3.5-27b"
     },
     {
@@ -1701,7 +1701,7 @@
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3.5-122b-a10b"
     },
     {
@@ -1714,7 +1714,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3.5-flash-02-23"
     },
     {
@@ -1724,10 +1724,10 @@
       "date": "2026-07-08",
       "input": 2.0,
       "output": 12.0,
-      "context": 1048756,
+      "context": 1048576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemini-3.1-pro-preview-customtools"
     },
     {
@@ -1740,7 +1740,7 @@
       "context": 400000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5.3-codex"
     },
     {
@@ -1753,7 +1753,7 @@
       "context": 1048576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemini-3.1-pro-preview"
     },
     {
@@ -1766,7 +1766,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "anthropic/claude-sonnet-4.6"
     },
     {
@@ -1779,7 +1779,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3.5-plus-02-15"
     },
     {
@@ -1787,12 +1787,12 @@
       "name": "Qwen: Qwen3.5 397B A17B",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.385,
-      "output": 2.45,
-      "context": 256000,
+      "input": 0.39,
+      "output": 2.34,
+      "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3.5-397b-a17b"
     },
     {
@@ -1800,12 +1800,12 @@
       "name": "MiniMax: MiniMax M2.5",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.12,
-      "output": 0.48,
+      "input": 0.15,
+      "output": 0.9,
       "context": 204800,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "minimax/minimax-m2.5"
     },
     {
@@ -1813,12 +1813,12 @@
       "name": "Z.ai: GLM 5",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.6,
-      "output": 1.92,
-      "context": 202752,
+      "input": 0.95,
+      "output": 2.55,
+      "context": 204800,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "z-ai/glm-5"
     },
     {
@@ -1831,7 +1831,7 @@
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-max-thinking"
     },
     {
@@ -1844,7 +1844,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "anthropic/claude-opus-4.6"
     },
     {
@@ -1852,12 +1852,12 @@
       "name": "Qwen: Qwen3 Coder Next",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.11,
+      "input": 0.12,
       "output": 0.8,
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-coder-next"
     },
     {
@@ -1865,12 +1865,12 @@
       "name": "MoonshotAI: Kimi K2.5",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.375,
-      "output": 2.025,
+      "input": 0.57,
+      "output": 2.85,
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "moonshotai/kimi-k2.5"
     },
     {
@@ -1883,7 +1883,7 @@
       "context": 65536,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "minimax/minimax-m2-her"
     },
     {
@@ -1896,7 +1896,7 @@
       "context": 128000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-audio"
     },
     {
@@ -1909,7 +1909,7 @@
       "context": 128000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-audio-mini"
     },
     {
@@ -1922,7 +1922,7 @@
       "context": 202752,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "z-ai/glm-4.7-flash"
     },
     {
@@ -1935,7 +1935,7 @@
       "context": 400000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5.2-codex"
     },
     {
@@ -1948,7 +1948,7 @@
       "context": 204800,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "minimax/minimax-m2.1"
     },
     {
@@ -1958,10 +1958,10 @@
       "date": "2026-07-08",
       "input": 0.4,
       "output": 1.75,
-      "context": 202752,
+      "context": 204800,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "z-ai/glm-4.7"
     },
     {
@@ -1974,7 +1974,7 @@
       "context": 1048576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemini-3-flash-preview"
     },
     {
@@ -1987,7 +1987,7 @@
       "context": 128000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5.2-chat"
     },
     {
@@ -2000,7 +2000,7 @@
       "context": 400000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5.2-pro"
     },
     {
@@ -2013,7 +2013,7 @@
       "context": 400000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5.2"
     },
     {
@@ -2039,7 +2039,7 @@
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "z-ai/glm-4.6v"
     },
     {
@@ -2052,7 +2052,7 @@
       "context": 400000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5.1-codex-max"
     },
     {
@@ -2065,7 +2065,7 @@
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "mistralai/ministral-14b-2512"
     },
     {
@@ -2078,7 +2078,7 @@
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "mistralai/ministral-8b-2512"
     },
     {
@@ -2091,7 +2091,7 @@
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "mistralai/ministral-3b-2512"
     },
     {
@@ -2104,7 +2104,7 @@
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "mistralai/mistral-large-2512"
     },
     {
@@ -2112,12 +2112,12 @@
       "name": "DeepSeek: DeepSeek V3.2",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.2288,
-      "output": 0.3432,
-      "context": 131072,
+      "input": 0.269,
+      "output": 0.4,
+      "context": 163840,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "deepseek/deepseek-v3.2"
     },
     {
@@ -2130,7 +2130,7 @@
       "context": 200000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "anthropic/claude-opus-4.5"
     },
     {
@@ -2143,7 +2143,7 @@
       "context": 65536,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemini-3-pro-image-preview"
     },
     {
@@ -2156,7 +2156,7 @@
       "context": 400000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5.1"
     },
     {
@@ -2182,7 +2182,7 @@
       "context": 400000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5.1-codex"
     },
     {
@@ -2195,7 +2195,7 @@
       "context": 400000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5.1-codex-mini"
     },
     {
@@ -2208,7 +2208,7 @@
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "moonshotai/kimi-k2-thinking"
     },
     {
@@ -2221,7 +2221,7 @@
       "context": 32000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "mistralai/voxtral-small-24b-2507"
     },
     {
@@ -2234,7 +2234,7 @@
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-oss-safeguard-20b"
     },
     {
@@ -2247,7 +2247,7 @@
       "context": 204800,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "minimax/minimax-m2"
     },
     {
@@ -2257,10 +2257,10 @@
       "date": "2026-07-08",
       "input": 0.104,
       "output": 0.416,
-      "context": 262144,
+      "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-vl-32b-instruct"
     },
     {
@@ -2273,7 +2273,7 @@
       "context": 400000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5-image-mini"
     },
     {
@@ -2286,7 +2286,7 @@
       "context": 200000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "anthropic/claude-haiku-4.5"
     },
     {
@@ -2294,12 +2294,12 @@
       "name": "Qwen: Qwen3 VL 8B Thinking",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.117,
-      "output": 1.365,
-      "context": 256000,
+      "input": 0.18,
+      "output": 2.1,
+      "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-vl-8b-thinking"
     },
     {
@@ -2309,10 +2309,10 @@
       "date": "2026-07-08",
       "input": 0.117,
       "output": 0.455,
-      "context": 256000,
+      "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-vl-8b-instruct"
     },
     {
@@ -2325,7 +2325,7 @@
       "context": 400000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5-image"
     },
     {
@@ -2364,7 +2364,7 @@
       "context": 32768,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemini-2.5-flash-image"
     },
     {
@@ -2372,12 +2372,12 @@
       "name": "Qwen: Qwen3 VL 30B A3B Thinking",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.13,
-      "output": 1.56,
-      "context": 131072,
+      "input": 0.2,
+      "output": 2.4,
+      "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-vl-30b-a3b-thinking"
     },
     {
@@ -2390,7 +2390,7 @@
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-vl-30b-a3b-instruct"
     },
     {
@@ -2403,7 +2403,7 @@
       "context": 400000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5-pro"
     },
     {
@@ -2411,12 +2411,12 @@
       "name": "Z.ai: GLM 4.6",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.43,
-      "output": 1.74,
-      "context": 202752,
+      "input": 0.5,
+      "output": 2.0,
+      "context": 204800,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "z-ai/glm-4.6"
     },
     {
@@ -2429,7 +2429,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "anthropic/claude-sonnet-4.5"
     },
     {
@@ -2442,7 +2442,7 @@
       "context": 163840,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "deepseek/deepseek-v3.2-exp"
     },
     {
@@ -2463,12 +2463,12 @@
       "name": "Qwen: Qwen3 VL 235B A22B Thinking",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.26,
-      "output": 2.6,
+      "input": 0.4,
+      "output": 4.0,
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-vl-235b-a22b-thinking"
     },
     {
@@ -2476,12 +2476,12 @@
       "name": "Qwen: Qwen3 VL 235B A22B Instruct",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.2,
-      "output": 0.88,
+      "input": 0.21,
+      "output": 1.9,
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-vl-235b-a22b-instruct"
     },
     {
@@ -2494,7 +2494,7 @@
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-max"
     },
     {
@@ -2507,7 +2507,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-coder-plus"
     },
     {
@@ -2529,11 +2529,11 @@
       "tier": "unreviewed",
       "date": "2026-07-08",
       "input": 0.27,
-      "output": 0.95,
+      "output": 1.0,
       "context": 163840,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "deepseek/deepseek-v3.1-terminus"
     },
     {
@@ -2546,7 +2546,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-coder-flash"
     },
     {
@@ -2554,12 +2554,12 @@
       "name": "Qwen: Qwen3 Next 80B A3B Thinking",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.0975,
-      "output": 0.78,
+      "input": 0.15,
+      "output": 1.2,
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-next-80b-a3b-thinking"
     },
     {
@@ -2567,12 +2567,12 @@
       "name": "Qwen: Qwen3 Next 80B A3B Instruct",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.09,
+      "input": 0.1,
       "output": 1.1,
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-next-80b-a3b-instruct"
     },
     {
@@ -2580,12 +2580,12 @@
       "name": "Qwen: Qwen Plus 0728 (thinking)",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.26,
-      "output": 0.78,
+      "input": 0.4,
+      "output": 1.2,
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen-plus-2025-07-28:thinking"
     },
     {
@@ -2598,7 +2598,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen-plus-2025-07-28"
     },
     {
@@ -2611,7 +2611,7 @@
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "moonshotai/kimi-k2-0905"
     },
     {
@@ -2619,12 +2619,12 @@
       "name": "Qwen: Qwen3 30B A3B Thinking 2507",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.13,
-      "output": 1.56,
-      "context": 131072,
+      "input": 0.2,
+      "output": 2.4,
+      "context": 81920,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-30b-a3b-thinking-2507"
     },
     {
@@ -2632,12 +2632,12 @@
       "name": "DeepSeek: DeepSeek V3.1",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.21,
-      "output": 0.79,
+      "input": 0.25,
+      "output": 0.95,
       "context": 163840,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "deepseek/deepseek-chat-v3.1"
     },
     {
@@ -2650,7 +2650,7 @@
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "mistralai/mistral-medium-3.1"
     },
     {
@@ -2663,7 +2663,7 @@
       "context": 65536,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "z-ai/glm-4.5v"
     },
     {
@@ -2689,7 +2689,7 @@
       "context": 400000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5"
     },
     {
@@ -2702,7 +2702,7 @@
       "context": 400000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5-mini"
     },
     {
@@ -2715,7 +2715,7 @@
       "context": 400000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-5-nano"
     },
     {
@@ -2723,12 +2723,12 @@
       "name": "OpenAI: gpt-oss-120b",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.03,
-      "output": 0.15,
+      "input": 0.037,
+      "output": 0.17,
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-oss-120b"
     },
     {
@@ -2736,12 +2736,12 @@
       "name": "OpenAI: gpt-oss-20b",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.029,
-      "output": 0.14,
+      "input": 0.03,
+      "output": 0.13,
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-oss-20b"
     },
     {
@@ -2754,7 +2754,7 @@
       "context": 200000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "anthropic/claude-opus-4.1"
     },
     {
@@ -2767,7 +2767,7 @@
       "context": 256000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "mistralai/codestral-2508"
     },
     {
@@ -2776,11 +2776,11 @@
       "tier": "unreviewed",
       "date": "2026-07-08",
       "input": 0.07,
-      "output": 0.27,
-      "context": 160000,
+      "output": 0.28,
+      "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-coder-30b-a3b-instruct"
     },
     {
@@ -2790,10 +2790,10 @@
       "date": "2026-07-08",
       "input": 0.0481,
       "output": 0.193,
-      "context": 131072,
+      "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-30b-a3b-instruct-2507"
     },
     {
@@ -2806,7 +2806,7 @@
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "z-ai/glm-4.5"
     },
     {
@@ -2819,7 +2819,7 @@
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "z-ai/glm-4.5-air"
     },
     {
@@ -2827,12 +2827,12 @@
       "name": "Qwen: Qwen3 235B A22B Thinking 2507",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.1495,
-      "output": 1.495,
+      "input": 0.23,
+      "output": 2.3,
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-235b-a22b-thinking-2507"
     },
     {
@@ -2840,12 +2840,12 @@
       "name": "Qwen: Qwen3 Coder 480B A35B",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.22,
-      "output": 1.8,
-      "context": 1048576,
+      "input": 0.3,
+      "output": 1.0,
+      "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-coder"
     },
     {
@@ -2858,7 +2858,7 @@
       "context": 1048576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemini-2.5-flash-lite"
     },
     {
@@ -2867,11 +2867,11 @@
       "tier": "unreviewed",
       "date": "2026-07-08",
       "input": 0.09,
-      "output": 0.1,
+      "output": 0.55,
       "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-235b-a22b-2507"
     },
     {
@@ -2884,7 +2884,7 @@
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "moonshotai/kimi-k2"
     },
     {
@@ -2894,10 +2894,10 @@
       "date": "2026-07-08",
       "input": 0.075,
       "output": 0.2,
-      "context": 128000,
+      "context": 256000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "mistralai/mistral-small-3.2-24b-instruct"
     },
     {
@@ -2905,12 +2905,12 @@
       "name": "MiniMax: MiniMax M1",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.4,
+      "input": 0.55,
       "output": 2.2,
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "minimax/minimax-m1"
     },
     {
@@ -2923,7 +2923,7 @@
       "context": 1048576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemini-2.5-flash"
     },
     {
@@ -2936,7 +2936,7 @@
       "context": 1048576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemini-2.5-pro"
     },
     {
@@ -2949,7 +2949,7 @@
       "context": 200000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/o3-pro"
     },
     {
@@ -2962,7 +2962,7 @@
       "context": 1048576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemini-2.5-pro-preview"
     },
     {
@@ -2975,7 +2975,7 @@
       "context": 163840,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "deepseek/deepseek-r1-0528"
     },
     {
@@ -2988,7 +2988,7 @@
       "context": 200000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "anthropic/claude-opus-4"
     },
     {
@@ -3001,7 +3001,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "anthropic/claude-sonnet-4"
     },
     {
@@ -3014,7 +3014,7 @@
       "context": 32768,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemma-3n-e4b-it"
     },
     {
@@ -3027,7 +3027,7 @@
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "mistralai/mistral-medium-3"
     },
     {
@@ -3040,7 +3040,7 @@
       "context": 1048576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemini-2.5-pro-preview-05-06"
     },
     {
@@ -3050,10 +3050,10 @@
       "date": "2026-07-08",
       "input": 0.18,
       "output": 0.18,
-      "context": 163840,
+      "context": 1048576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "meta-llama/llama-guard-4-12b"
     },
     {
@@ -3066,7 +3066,7 @@
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-30b-a3b"
     },
     {
@@ -3079,7 +3079,7 @@
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-8b"
     },
     {
@@ -3087,12 +3087,12 @@
       "name": "Qwen: Qwen3 14B",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.1,
-      "output": 0.24,
-      "context": 131702,
+      "input": 0.2275,
+      "output": 0.91,
+      "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-14b"
     },
     {
@@ -3105,7 +3105,7 @@
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-32b"
     },
     {
@@ -3118,7 +3118,7 @@
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen3-235b-a22b"
     },
     {
@@ -3131,7 +3131,7 @@
       "context": 200000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/o4-mini-high"
     },
     {
@@ -3144,7 +3144,7 @@
       "context": 200000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/o3"
     },
     {
@@ -3157,7 +3157,7 @@
       "context": 200000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/o4-mini"
     },
     {
@@ -3170,7 +3170,7 @@
       "context": 1047576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-4.1"
     },
     {
@@ -3183,7 +3183,7 @@
       "context": 1047576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-4.1-mini"
     },
     {
@@ -3196,7 +3196,7 @@
       "context": 1047576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-4.1-nano"
     },
     {
@@ -3204,12 +3204,12 @@
       "name": "Meta: Llama 4 Maverick",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.15,
-      "output": 0.6,
+      "input": 0.2,
+      "output": 0.8,
       "context": 1048576,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "meta-llama/llama-4-maverick"
     },
     {
@@ -3219,10 +3219,10 @@
       "date": "2026-07-08",
       "input": 0.1,
       "output": 0.3,
-      "context": 10000000,
+      "context": 1310720,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "meta-llama/llama-4-scout"
     },
     {
@@ -3230,12 +3230,12 @@
       "name": "DeepSeek: DeepSeek V3 0324",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.24,
-      "output": 0.9,
+      "input": 0.27,
+      "output": 1.12,
       "context": 163840,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "deepseek/deepseek-chat-v3-0324"
     },
     {
@@ -3248,7 +3248,7 @@
       "context": 200000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/o1-pro"
     },
     {
@@ -3261,7 +3261,7 @@
       "context": 128000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "mistralai/mistral-small-3.1-24b-instruct"
     },
     {
@@ -3274,7 +3274,7 @@
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemma-3-4b-it"
     },
     {
@@ -3287,7 +3287,7 @@
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemma-3-12b-it"
     },
     {
@@ -3322,11 +3322,11 @@
       "tier": "unreviewed",
       "date": "2026-07-08",
       "input": 0.08,
-      "output": 0.16,
-      "context": 131072,
+      "output": 0.45,
+      "context": 262144,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemma-3-27b-it"
     },
     {
@@ -3339,7 +3339,7 @@
       "context": 32768,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "mistralai/mistral-saba"
     },
     {
@@ -3352,7 +3352,7 @@
       "context": 200000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/o3-mini-high"
     },
     {
@@ -3362,10 +3362,10 @@
       "date": "2026-07-08",
       "input": 0.8,
       "output": 1.0,
-      "context": 131072,
+      "context": 128000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen2.5-vl-72b-instruct"
     },
     {
@@ -3378,7 +3378,7 @@
       "context": 1000000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen-plus"
     },
     {
@@ -3391,7 +3391,7 @@
       "context": 200000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/o3-mini"
     },
     {
@@ -3404,7 +3404,7 @@
       "context": 32768,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "mistralai/mistral-small-24b-instruct-2501"
     },
     {
@@ -3414,10 +3414,10 @@
       "date": "2026-07-08",
       "input": 0.8,
       "output": 0.8,
-      "context": 128000,
+      "context": 8192,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "deepseek/deepseek-r1-distill-llama-70b"
     },
     {
@@ -3430,7 +3430,7 @@
       "context": 163840,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "deepseek/deepseek-r1"
     },
     {
@@ -3443,7 +3443,7 @@
       "context": 1000192,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "minimax/minimax-01"
     },
     {
@@ -3451,12 +3451,12 @@
       "name": "DeepSeek: DeepSeek V3",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.2002,
-      "output": 0.8001,
-      "context": 131072,
+      "input": 0.2574,
+      "output": 1.0287,
+      "context": 163840,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "deepseek/deepseek-chat"
     },
     {
@@ -3469,7 +3469,7 @@
       "context": 200000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/o1"
     },
     {
@@ -3477,12 +3477,12 @@
       "name": "Meta: Llama 3.3 70B Instruct",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.1,
-      "output": 0.32,
+      "input": 0.13,
+      "output": 0.4,
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "meta-llama/llama-3.3-70b-instruct"
     },
     {
@@ -3495,7 +3495,7 @@
       "context": 128000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-4o-2024-11-20"
     },
     {
@@ -3508,7 +3508,7 @@
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "mistralai/mistral-large-2407"
     },
     {
@@ -3518,10 +3518,10 @@
       "date": "2026-07-08",
       "input": 0.66,
       "output": 1.0,
-      "context": 128000,
+      "context": 32768,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen-2.5-coder-32b-instruct"
     },
     {
@@ -3529,12 +3529,12 @@
       "name": "Qwen: Qwen2.5 7B Instruct",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.04,
-      "output": 0.1,
-      "context": 131072,
+      "input": 0.1,
+      "output": 0.2,
+      "context": 32768,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen-2.5-7b-instruct"
     },
     {
@@ -3547,7 +3547,7 @@
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "meta-llama/llama-3.2-3b-instruct"
     },
     {
@@ -3557,10 +3557,10 @@
       "date": "2026-07-08",
       "input": 0.027,
       "output": 0.201,
-      "context": 131072,
+      "context": 60000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "meta-llama/llama-3.2-1b-instruct"
     },
     {
@@ -3583,10 +3583,10 @@
       "date": "2026-07-08",
       "input": 0.36,
       "output": 0.4,
-      "context": 131072,
+      "context": 32768,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "qwen/qwen-2.5-72b-instruct"
     },
     {
@@ -3599,7 +3599,7 @@
       "context": 128000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-4o-2024-08-06"
     },
     {
@@ -3607,12 +3607,12 @@
       "name": "Meta: Llama 3.1 8B Instruct",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.02,
-      "output": 0.03,
+      "input": 0.05,
+      "output": 0.08,
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "meta-llama/llama-3.1-8b-instruct"
     },
     {
@@ -3625,7 +3625,7 @@
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "meta-llama/llama-3.1-70b-instruct"
     },
     {
@@ -3633,12 +3633,12 @@
       "name": "Mistral: Mistral Nemo",
       "tier": "unreviewed",
       "date": "2026-07-08",
-      "input": 0.02,
+      "input": 0.019,
       "output": 0.03,
       "context": 131072,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "mistralai/mistral-nemo"
     },
     {
@@ -3651,7 +3651,7 @@
       "context": 128000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-4o-mini-2024-07-18"
     },
     {
@@ -3664,7 +3664,7 @@
       "context": 128000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-4o-mini"
     },
     {
@@ -3677,7 +3677,7 @@
       "context": 8192,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "google/gemma-2-27b-it"
     },
     {
@@ -3690,7 +3690,7 @@
       "context": 128000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-4o-2024-05-13"
     },
     {
@@ -3703,7 +3703,7 @@
       "context": 128000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-4o"
     },
     {
@@ -3729,7 +3729,7 @@
       "context": 65536,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "mistralai/mixtral-8x22b-instruct"
     },
     {
@@ -3742,7 +3742,7 @@
       "context": 128000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-4-turbo"
     },
     {
@@ -3755,7 +3755,7 @@
       "context": 200000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "anthropic/claude-3-haiku"
     },
     {
@@ -3768,7 +3768,7 @@
       "context": 128000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "mistralai/mistral-large"
     },
     {
@@ -3781,7 +3781,7 @@
       "context": 4095,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-3.5-turbo-0613"
     },
     {
@@ -3794,7 +3794,7 @@
       "context": 128000,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-4-turbo-preview"
     },
     {
@@ -3807,7 +3807,7 @@
       "context": 4095,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-3.5-turbo-instruct"
     },
     {
@@ -3820,7 +3820,7 @@
       "context": 16385,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-3.5-turbo-16k"
     },
     {
@@ -3833,7 +3833,7 @@
       "context": 8191,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-4"
     },
     {
@@ -3846,8 +3846,177 @@
       "context": 16385,
       "source": "openrouter",
       "reviewed": false,
-      "lastChecked": "2026-07-08",
+      "lastChecked": "2026-08-01",
       "orId": "openai/gpt-3.5-turbo"
+    },
+    {
+      "provider": "DeepSeek",
+      "name": "DeepSeek: DeepSeek V4 Flash 0731",
+      "tier": "unreviewed",
+      "date": "2026-08-01",
+      "input": 0.14,
+      "output": 0.28,
+      "context": 1048576,
+      "source": "openrouter",
+      "reviewed": false,
+      "lastChecked": "2026-08-01",
+      "orId": "deepseek/deepseek-v4-flash-0731"
+    },
+    {
+      "provider": "Alibaba",
+      "name": "Qwen: Qwen3.7 Flash",
+      "tier": "unreviewed",
+      "date": "2026-08-01",
+      "input": 0.03,
+      "output": 0.13,
+      "context": 1000000,
+      "source": "openrouter",
+      "reviewed": false,
+      "lastChecked": "2026-08-01",
+      "orId": "qwen/qwen3.7-flash"
+    },
+    {
+      "provider": "Anthropic",
+      "name": "Claude Opus 5 (Fast)",
+      "tier": "unreviewed",
+      "date": "2026-08-01",
+      "input": 10.0,
+      "output": 50.0,
+      "context": 1000000,
+      "source": "openrouter",
+      "reviewed": false,
+      "lastChecked": "2026-08-01",
+      "orId": "anthropic/claude-opus-5-fast"
+    },
+    {
+      "provider": "Anthropic",
+      "name": "Claude Opus 5",
+      "tier": "unreviewed",
+      "date": "2026-08-01",
+      "input": 5.0,
+      "output": 25.0,
+      "context": 1000000,
+      "source": "openrouter",
+      "reviewed": false,
+      "lastChecked": "2026-08-01",
+      "orId": "anthropic/claude-opus-5"
+    },
+    {
+      "provider": "Google",
+      "name": "Google: Gemini 3.6 Flash",
+      "tier": "unreviewed",
+      "date": "2026-08-01",
+      "input": 1.5,
+      "output": 7.5,
+      "context": 1048576,
+      "source": "openrouter",
+      "reviewed": false,
+      "lastChecked": "2026-08-01",
+      "orId": "google/gemini-3.6-flash"
+    },
+    {
+      "provider": "Google",
+      "name": "Google: Gemini 3.5 Flash Lite",
+      "tier": "unreviewed",
+      "date": "2026-08-01",
+      "input": 0.3,
+      "output": 2.5,
+      "context": 1048576,
+      "source": "openrouter",
+      "reviewed": false,
+      "lastChecked": "2026-08-01",
+      "orId": "google/gemini-3.5-flash-lite"
+    },
+    {
+      "provider": "Moonshot AI",
+      "name": "MoonshotAI: Kimi K3",
+      "tier": "unreviewed",
+      "date": "2026-08-01",
+      "input": 3.0,
+      "output": 15.0,
+      "context": 1048576,
+      "source": "openrouter",
+      "reviewed": false,
+      "lastChecked": "2026-08-01",
+      "orId": "moonshotai/kimi-k3"
+    },
+    {
+      "provider": "OpenAI",
+      "name": "OpenAI: GPT-5.6 Luna Pro",
+      "tier": "unreviewed",
+      "date": "2026-08-01",
+      "input": 0.1,
+      "output": 0.6,
+      "context": 1050000,
+      "source": "openrouter",
+      "reviewed": false,
+      "lastChecked": "2026-08-01",
+      "orId": "openai/gpt-5.6-luna-pro"
+    },
+    {
+      "provider": "OpenAI",
+      "name": "OpenAI: GPT-5.6 Luna",
+      "tier": "unreviewed",
+      "date": "2026-08-01",
+      "input": 0.1,
+      "output": 0.6,
+      "context": 1050000,
+      "source": "openrouter",
+      "reviewed": false,
+      "lastChecked": "2026-08-01",
+      "orId": "openai/gpt-5.6-luna"
+    },
+    {
+      "provider": "OpenAI",
+      "name": "OpenAI: GPT-5.6 Terra Pro",
+      "tier": "unreviewed",
+      "date": "2026-08-01",
+      "input": 1.0,
+      "output": 6.0,
+      "context": 1050000,
+      "source": "openrouter",
+      "reviewed": false,
+      "lastChecked": "2026-08-01",
+      "orId": "openai/gpt-5.6-terra-pro"
+    },
+    {
+      "provider": "OpenAI",
+      "name": "OpenAI: GPT-5.6 Terra",
+      "tier": "unreviewed",
+      "date": "2026-08-01",
+      "input": 1.0,
+      "output": 6.0,
+      "context": 1050000,
+      "source": "openrouter",
+      "reviewed": false,
+      "lastChecked": "2026-08-01",
+      "orId": "openai/gpt-5.6-terra"
+    },
+    {
+      "provider": "OpenAI",
+      "name": "OpenAI: GPT-5.6 Sol Pro",
+      "tier": "unreviewed",
+      "date": "2026-08-01",
+      "input": 5.0,
+      "output": 30.0,
+      "context": 1050000,
+      "source": "openrouter",
+      "reviewed": false,
+      "lastChecked": "2026-08-01",
+      "orId": "openai/gpt-5.6-sol-pro"
+    },
+    {
+      "provider": "OpenAI",
+      "name": "OpenAI: GPT-5.6 Sol",
+      "tier": "unreviewed",
+      "date": "2026-08-01",
+      "input": 5.0,
+      "output": 30.0,
+      "context": 1050000,
+      "source": "openrouter",
+      "reviewed": false,
+      "lastChecked": "2026-08-01",
+      "orId": "openai/gpt-5.6-sol"
     }
   ]
 }

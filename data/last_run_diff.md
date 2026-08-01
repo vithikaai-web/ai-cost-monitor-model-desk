@@ -1,224 +1,81 @@
-# Pricing sync — 2026-07-08 18:52 UTC
+# Pricing sync — 2026-08-01 07:54 UTC
 
-Checked 345 catalog entries, tracking 11 providers.
+Checked 336 catalog entries, tracking 11 providers.
 
-## New models added — need your review (218)
-- xAI · xAI: Grok 4.5: $2.0/$6.0, context 500000
-- Anthropic · Anthropic: Claude Sonnet 5: $2.0/$10.0, context 1000000
-- Google · Google: Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image): $0.25/$1.5, context 65536
-- Google · Google: Nano Banana 2 (Gemini 3.1 Flash Image): $0.5/$3.0, context 131072
-- Google · Google: Nano Banana Pro (Gemini 3 Pro Image): $2.0/$12.0, context 65536
-- Zhipu AI · Z.ai: GLM 5.2: $0.42/$1.32, context 1048576
-- Moonshot AI · MoonshotAI: Kimi K2.7 Code: $0.74/$3.5, context 262144
-- Anthropic · Anthropic: Claude Fable 5: $10.0/$50.0, context 1000000
-- Alibaba · Qwen: Qwen3.7 Plus: $0.32/$1.28, context 1000000
-- MiniMax · MiniMax: MiniMax M3: $0.3/$1.2, context 1048576
-- Anthropic · Anthropic: Claude Opus 4.8 (Fast): $10.0/$50.0, context 1000000
-- Anthropic · Anthropic: Claude Opus 4.8: $5.0/$25.0, context 1000000
-- Alibaba · Qwen: Qwen3.7 Max: $1.25/$3.75, context 1000000
-- xAI · xAI: Grok Build 0.1: $1.0/$2.0, context 256000
-- Google · Google: Gemini 3.5 Flash: $1.5/$9.0, context 1048576
-- Anthropic · Anthropic: Claude Opus 4.7 (Fast): $30.0/$150.0, context 1000000
-- Google · Google: Gemini 3.1 Flash Lite: $0.25/$1.5, context 1048576
-- OpenAI · OpenAI: GPT Chat Latest: $5.0/$30.0, context 400000
-- xAI · xAI: Grok 4.3: $1.25/$2.5, context 1000000
-- Mistral · Mistral: Mistral Medium 3.5: $1.5/$7.5, context 262144
-- Alibaba · Qwen: Qwen3.5 Plus 2026-04-20: $0.3/$1.8, context 1000000
-- Alibaba · Qwen: Qwen3.6 Flash: $0.1875/$1.125, context 1000000
-- Alibaba · Qwen: Qwen3.6 35B A3B: $0.14/$1.0, context 262144
-- Alibaba · Qwen: Qwen3.6 Max Preview: $1.04/$6.24, context 262144
-- Alibaba · Qwen: Qwen3.6 27B: $0.285/$2.4, context 262144
-- OpenAI · OpenAI: GPT-5.5 Pro: $30.0/$180.0, context 1050000
-- OpenAI · OpenAI: GPT-5.5: $5.0/$30.0, context 1050000
-- DeepSeek · DeepSeek: DeepSeek V4 Pro: $0.435/$0.87, context 1048576
-- DeepSeek · DeepSeek: DeepSeek V4 Flash: $0.09/$0.18, context 1048576
-- OpenAI · OpenAI: GPT-5.4 Image 2: $8.0/$15.0, context 272000
-- Moonshot AI · MoonshotAI: Kimi K2.6: $0.65/$3.41, context 262144
-- Anthropic · Anthropic: Claude Opus 4.7: $5.0/$25.0, context 1000000
-- Zhipu AI · Z.ai: GLM 5.1: $0.966/$3.036, context 202752
-- Google · Google: Gemma 4 26B A4B : $0.06/$0.33, context 262144
-- Google · Google: Gemma 4 31B: $0.12/$0.35, context 262144
-- Alibaba · Qwen: Qwen3.6 Plus: $0.325/$1.95, context 1000000
-- Zhipu AI · Z.ai: GLM 5V Turbo: $1.2/$4.0, context 202752
-- xAI · xAI: Grok 4.20 Multi-Agent: $1.25/$2.5, context 2000000
-- xAI · xAI: Grok 4.20: $1.25/$2.5, context 2000000
-- MiniMax · MiniMax: MiniMax M2.7: $0.18/$0.72, context 204800
-- OpenAI · OpenAI: GPT-5.4 Nano: $0.2/$1.25, context 400000
-- OpenAI · OpenAI: GPT-5.4 Mini: $0.75/$4.5, context 400000
-- Mistral · Mistral: Mistral Small 4: $0.15/$0.6, context 262144
-- Zhipu AI · Z.ai: GLM 5 Turbo: $1.2/$4.0, context 262144
-- Alibaba · Qwen: Qwen3.5-9B: $0.1/$0.15, context 262144
-- OpenAI · OpenAI: GPT-5.4 Pro: $30.0/$180.0, context 1050000
-- OpenAI · OpenAI: GPT-5.4: $2.5/$15.0, context 1050000
-- OpenAI · OpenAI: GPT-5.3 Chat: $1.75/$14.0, context 128000
-- Google · Google: Gemini 3.1 Flash Lite Preview: $0.25/$1.5, context 1048576
-- Google · Google: Nano Banana 2 (Gemini 3.1 Flash Image Preview): $0.5/$3.0, context 131072
-- Alibaba · Qwen: Qwen3.5-35B-A3B: $0.14/$1.0, context 262144
-- Alibaba · Qwen: Qwen3.5-27B: $0.195/$1.56, context 262144
-- Alibaba · Qwen: Qwen3.5-122B-A10B: $0.26/$2.08, context 262144
-- Alibaba · Qwen: Qwen3.5-Flash: $0.065/$0.26, context 1000000
-- Google · Google: Gemini 3.1 Pro Preview Custom Tools: $2.0/$12.0, context 1048756
-- OpenAI · OpenAI: GPT-5.3-Codex: $1.75/$14.0, context 400000
-- Google · Google: Gemini 3.1 Pro Preview: $2.0/$12.0, context 1048576
-- Anthropic · Anthropic: Claude Sonnet 4.6: $3.0/$15.0, context 1000000
-- Alibaba · Qwen: Qwen3.5 Plus 2026-02-15: $0.26/$1.56, context 1000000
-- Alibaba · Qwen: Qwen3.5 397B A17B: $0.385/$2.45, context 256000
-- MiniMax · MiniMax: MiniMax M2.5: $0.12/$0.48, context 204800
-- Zhipu AI · Z.ai: GLM 5: $0.6/$1.92, context 202752
-- Alibaba · Qwen: Qwen3 Max Thinking: $0.78/$3.9, context 262144
-- Anthropic · Anthropic: Claude Opus 4.6: $5.0/$25.0, context 1000000
-- Alibaba · Qwen: Qwen3 Coder Next: $0.11/$0.8, context 262144
-- Moonshot AI · MoonshotAI: Kimi K2.5: $0.375/$2.025, context 262144
-- MiniMax · MiniMax: MiniMax M2-her: $0.3/$1.2, context 65536
-- OpenAI · OpenAI: GPT Audio: $2.5/$10.0, context 128000
-- OpenAI · OpenAI: GPT Audio Mini: $0.6/$2.4, context 128000
-- Zhipu AI · Z.ai: GLM 4.7 Flash: $0.06/$0.4, context 202752
-- OpenAI · OpenAI: GPT-5.2-Codex: $1.75/$14.0, context 400000
-- MiniMax · MiniMax: MiniMax M2.1: $0.3/$1.2, context 204800
-- Zhipu AI · Z.ai: GLM 4.7: $0.4/$1.75, context 202752
-- Google · Google: Gemini 3 Flash Preview: $0.5/$3.0, context 1048576
-- OpenAI · OpenAI: GPT-5.2 Chat: $1.75/$14.0, context 128000
-- OpenAI · OpenAI: GPT-5.2 Pro: $21.0/$168.0, context 400000
-- OpenAI · OpenAI: GPT-5.2: $1.75/$14.0, context 400000
-- Mistral · Mistral: Devstral 2 2512: $0.4/$2.0, context 262144
-- Zhipu AI · Z.ai: GLM 4.6V: $0.3/$0.9, context 131072
-- OpenAI · OpenAI: GPT-5.1-Codex-Max: $1.25/$10.0, context 400000
-- Mistral · Mistral: Ministral 3 14B 2512: $0.2/$0.2, context 262144
-- Mistral · Mistral: Ministral 3 8B 2512: $0.15/$0.15, context 262144
-- Mistral · Mistral: Ministral 3 3B 2512: $0.1/$0.1, context 131072
-- Mistral · Mistral: Mistral Large 3 2512: $0.5/$1.5, context 262144
-- DeepSeek · DeepSeek: DeepSeek V3.2: $0.2288/$0.3432, context 131072
-- Anthropic · Anthropic: Claude Opus 4.5: $5.0/$25.0, context 200000
-- Google · Google: Nano Banana Pro (Gemini 3 Pro Image Preview): $2.0/$12.0, context 65536
-- OpenAI · OpenAI: GPT-5.1: $1.25/$10.0, context 400000
-- OpenAI · OpenAI: GPT-5.1 Chat: $1.25/$10.0, context 128000
-- OpenAI · OpenAI: GPT-5.1-Codex: $1.25/$10.0, context 400000
-- OpenAI · OpenAI: GPT-5.1-Codex-Mini: $0.25/$2.0, context 400000
-- Moonshot AI · MoonshotAI: Kimi K2 Thinking: $0.6/$2.5, context 262144
-- Mistral · Mistral: Voxtral Small 24B 2507: $0.1/$0.3, context 32000
-- OpenAI · OpenAI: gpt-oss-safeguard-20b: $0.075/$0.3, context 131072
-- MiniMax · MiniMax: MiniMax M2: $0.255/$1.02, context 204800
-- Alibaba · Qwen: Qwen3 VL 32B Instruct: $0.104/$0.416, context 262144
-- OpenAI · OpenAI: GPT-5 Image Mini: $2.5/$2.0, context 400000
-- Anthropic · Anthropic: Claude Haiku 4.5: $1.0/$5.0, context 200000
-- Alibaba · Qwen: Qwen3 VL 8B Thinking: $0.117/$1.365, context 256000
-- Alibaba · Qwen: Qwen3 VL 8B Instruct: $0.117/$0.455, context 256000
-- OpenAI · OpenAI: GPT-5 Image: $10.0/$10.0, context 400000
-- OpenAI · OpenAI: o3 Deep Research: $10.0/$40.0, context 200000
-- OpenAI · OpenAI: o4 Mini Deep Research: $2.0/$8.0, context 200000
-- Google · Google: Nano Banana (Gemini 2.5 Flash Image): $0.3/$2.5, context 32768
-- Alibaba · Qwen: Qwen3 VL 30B A3B Thinking: $0.13/$1.56, context 131072
-- Alibaba · Qwen: Qwen3 VL 30B A3B Instruct: $0.13/$0.52, context 262144
-- OpenAI · OpenAI: GPT-5 Pro: $15.0/$120.0, context 400000
-- Zhipu AI · Z.ai: GLM 4.6: $0.43/$1.74, context 202752
-- Anthropic · Anthropic: Claude Sonnet 4.5: $3.0/$15.0, context 1000000
-- DeepSeek · DeepSeek: DeepSeek V3.2 Exp: $0.27/$0.41, context 163840
-- Google · Google: Gemini 2.5 Flash Lite Preview 09-2025: $0.1/$0.4, context 1048576
-- Alibaba · Qwen: Qwen3 VL 235B A22B Thinking: $0.26/$2.6, context 131072
-- Alibaba · Qwen: Qwen3 VL 235B A22B Instruct: $0.2/$0.88, context 262144
-- Alibaba · Qwen: Qwen3 Max: $0.78/$3.9, context 262144
-- Alibaba · Qwen: Qwen3 Coder Plus: $0.65/$3.25, context 1000000
-- OpenAI · OpenAI: GPT-5 Codex: $1.25/$10.0, context 400000
-- DeepSeek · DeepSeek: DeepSeek V3.1 Terminus: $0.27/$0.95, context 163840
-- Alibaba · Qwen: Qwen3 Coder Flash: $0.195/$0.975, context 1000000
-- Alibaba · Qwen: Qwen3 Next 80B A3B Thinking: $0.0975/$0.78, context 262144
-- Alibaba · Qwen: Qwen3 Next 80B A3B Instruct: $0.09/$1.1, context 262144
-- Alibaba · Qwen: Qwen Plus 0728 (thinking): $0.26/$0.78, context 1000000
-- Alibaba · Qwen: Qwen Plus 0728: $0.26/$0.78, context 1000000
-- Moonshot AI · MoonshotAI: Kimi K2 0905: $0.6/$2.5, context 262144
-- Alibaba · Qwen: Qwen3 30B A3B Thinking 2507: $0.13/$1.56, context 131072
-- DeepSeek · DeepSeek: DeepSeek V3.1: $0.21/$0.79, context 163840
-- Mistral · Mistral: Mistral Medium 3.1: $0.4/$2.0, context 131072
-- Zhipu AI · Z.ai: GLM 4.5V: $0.6/$1.8, context 65536
-- OpenAI · OpenAI: GPT-5 Chat: $1.25/$10.0, context 128000
-- OpenAI · OpenAI: GPT-5: $1.25/$10.0, context 400000
-- OpenAI · OpenAI: GPT-5 Mini: $0.25/$2.0, context 400000
-- OpenAI · OpenAI: GPT-5 Nano: $0.05/$0.4, context 400000
-- OpenAI · OpenAI: gpt-oss-120b: $0.03/$0.15, context 131072
-- OpenAI · OpenAI: gpt-oss-20b: $0.029/$0.14, context 131072
-- Anthropic · Anthropic: Claude Opus 4.1: $15.0/$75.0, context 200000
-- Mistral · Mistral: Codestral 2508: $0.3/$0.9, context 256000
-- Alibaba · Qwen: Qwen3 Coder 30B A3B Instruct: $0.07/$0.27, context 160000
-- Alibaba · Qwen: Qwen3 30B A3B Instruct 2507: $0.0481/$0.193, context 131072
-- Zhipu AI · Z.ai: GLM 4.5: $0.6/$2.2, context 131072
-- Zhipu AI · Z.ai: GLM 4.5 Air: $0.13/$0.85, context 131072
-- Alibaba · Qwen: Qwen3 235B A22B Thinking 2507: $0.1495/$1.495, context 262144
-- Alibaba · Qwen: Qwen3 Coder 480B A35B: $0.22/$1.8, context 1048576
-- Google · Google: Gemini 2.5 Flash Lite: $0.1/$0.4, context 1048576
-- Alibaba · Qwen: Qwen3 235B A22B Instruct 2507: $0.09/$0.1, context 262144
-- Moonshot AI · MoonshotAI: Kimi K2 0711: $0.57/$2.3, context 131072
-- Mistral · Mistral: Mistral Small 3.2 24B: $0.075/$0.2, context 128000
-- MiniMax · MiniMax: MiniMax M1: $0.4/$2.2, context 1000000
-- Google · Google: Gemini 2.5 Flash: $0.3/$2.5, context 1048576
-- Google · Google: Gemini 2.5 Pro: $1.25/$10.0, context 1048576
-- OpenAI · OpenAI: o3 Pro: $20.0/$80.0, context 200000
-- Google · Google: Gemini 2.5 Pro Preview 06-05: $1.25/$10.0, context 1048576
-- DeepSeek · DeepSeek: R1 0528: $0.5/$2.15, context 163840
-- Anthropic · Anthropic: Claude Opus 4: $15.0/$75.0, context 200000
-- Anthropic · Anthropic: Claude Sonnet 4: $3.0/$15.0, context 1000000
-- Google · Google: Gemma 3n 4B: $0.06/$0.12, context 32768
-- Mistral · Mistral: Mistral Medium 3: $0.4/$2.0, context 131072
-- Google · Google: Gemini 2.5 Pro Preview 05-06: $1.25/$10.0, context 1048576
-- Meta · Meta: Llama Guard 4 12B: $0.18/$0.18, context 163840
-- Alibaba · Qwen: Qwen3 30B A3B: $0.12/$0.5, context 131072
-- Alibaba · Qwen: Qwen3 8B: $0.117/$0.455, context 131072
-- Alibaba · Qwen: Qwen3 14B: $0.1/$0.24, context 131702
-- Alibaba · Qwen: Qwen3 32B: $0.08/$0.28, context 131072
-- Alibaba · Qwen: Qwen3 235B A22B: $0.455/$1.82, context 131072
-- OpenAI · OpenAI: o4 Mini High: $1.1/$4.4, context 200000
-- OpenAI · OpenAI: o3: $2.0/$8.0, context 200000
-- OpenAI · OpenAI: o4 Mini: $1.1/$4.4, context 200000
-- OpenAI · OpenAI: GPT-4.1: $2.0/$8.0, context 1047576
-- OpenAI · OpenAI: GPT-4.1 Mini: $0.4/$1.6, context 1047576
-- OpenAI · OpenAI: GPT-4.1 Nano: $0.1/$0.4, context 1047576
-- Meta · Meta: Llama 4 Maverick: $0.15/$0.6, context 1048576
-- Meta · Meta: Llama 4 Scout: $0.1/$0.3, context 10000000
-- DeepSeek · DeepSeek: DeepSeek V3 0324: $0.24/$0.9, context 163840
-- OpenAI · OpenAI: o1-pro: $150.0/$600.0, context 200000
-- Mistral · Mistral: Mistral Small 3.1 24B: $0.351/$0.555, context 128000
-- Google · Google: Gemma 3 4B: $0.05/$0.1, context 131072
-- Google · Google: Gemma 3 12B: $0.05/$0.15, context 131072
-- OpenAI · OpenAI: GPT-4o-mini Search Preview: $0.15/$0.6, context 128000
-- OpenAI · OpenAI: GPT-4o Search Preview: $2.5/$10.0, context 128000
-- Google · Google: Gemma 3 27B: $0.08/$0.16, context 131072
-- Mistral · Mistral: Saba: $0.2/$0.6, context 32768
-- OpenAI · OpenAI: o3 Mini High: $1.1/$4.4, context 200000
-- Alibaba · Qwen: Qwen2.5 VL 72B Instruct: $0.8/$1.0, context 131072
-- Alibaba · Qwen: Qwen-Plus: $0.26/$0.78, context 1000000
-- OpenAI · OpenAI: o3 Mini: $1.1/$4.4, context 200000
-- Mistral · Mistral: Mistral Small 3: $0.05/$0.08, context 32768
-- DeepSeek · DeepSeek: R1 Distill Llama 70B: $0.8/$0.8, context 128000
-- DeepSeek · DeepSeek: R1: $0.7/$2.5, context 163840
-- MiniMax · MiniMax: MiniMax-01: $0.2/$1.1, context 1000192
-- DeepSeek · DeepSeek: DeepSeek V3: $0.2002/$0.8001, context 131072
-- OpenAI · OpenAI: o1: $15.0/$60.0, context 200000
-- Meta · Meta: Llama 3.3 70B Instruct: $0.1/$0.32, context 131072
-- OpenAI · OpenAI: GPT-4o (2024-11-20): $2.5/$10.0, context 128000
-- Mistral · Mistral Large 2407: $2.0/$6.0, context 131072
-- Alibaba · Qwen2.5 Coder 32B Instruct: $0.66/$1.0, context 128000
-- Alibaba · Qwen: Qwen2.5 7B Instruct: $0.04/$0.1, context 131072
-- Meta · Meta: Llama 3.2 3B Instruct: $0.05/$0.33, context 131072
-- Meta · Meta: Llama 3.2 1B Instruct: $0.027/$0.201, context 131072
-- Meta · Meta: Llama 3.2 11B Vision Instruct: $0.345/$0.345, context 131072
-- Alibaba · Qwen2.5 72B Instruct: $0.36/$0.4, context 131072
-- OpenAI · OpenAI: GPT-4o (2024-08-06): $2.5/$10.0, context 128000
-- Meta · Meta: Llama 3.1 8B Instruct: $0.02/$0.03, context 131072
-- Meta · Meta: Llama 3.1 70B Instruct: $0.4/$0.4, context 131072
-- Mistral · Mistral: Mistral Nemo: $0.02/$0.03, context 131072
-- OpenAI · OpenAI: GPT-4o-mini (2024-07-18): $0.15/$0.6, context 128000
-- OpenAI · OpenAI: GPT-4o-mini: $0.15/$0.6, context 128000
-- Google · Google: Gemma 2 27B: $0.65/$0.65, context 8192
-- OpenAI · OpenAI: GPT-4o (2024-05-13): $5.0/$15.0, context 128000
-- OpenAI · OpenAI: GPT-4o: $2.5/$10.0, context 128000
-- Meta · Meta: Llama 3 8B Instruct: $0.14/$0.14, context 8192
-- Mistral · Mistral: Mixtral 8x22B Instruct: $2.0/$6.0, context 65536
-- OpenAI · OpenAI: GPT-4 Turbo: $10.0/$30.0, context 128000
-- Anthropic · Anthropic: Claude 3 Haiku: $0.25/$1.25, context 200000
-- Mistral · Mistral Large: $2.0/$6.0, context 128000
-- OpenAI · OpenAI: GPT-3.5 Turbo (older v0613): $1.0/$2.0, context 4095
-- OpenAI · OpenAI: GPT-4 Turbo Preview: $10.0/$30.0, context 128000
-- OpenAI · OpenAI: GPT-3.5 Turbo Instruct: $1.5/$2.0, context 4095
-- OpenAI · OpenAI: GPT-3.5 Turbo 16k: $3.0/$4.0, context 16385
-- OpenAI · OpenAI: GPT-4: $30.0/$60.0, context 8191
-- OpenAI · OpenAI: GPT-3.5 Turbo: $0.5/$1.5, context 16385
+## Price/context changes (60)
+- Google · Google: Nano Banana Pro (Gemini 3 Pro Image): $2.0/$12.0 → $2.0/$12.0, context 65536 → 131072
+- Zhipu AI · Z.ai: GLM 5.2: $0.42/$1.32 → $0.7601/$2.3888, context 1048576 → 1048576
+- Moonshot AI · MoonshotAI: Kimi K2.7 Code: $0.74/$3.5 → $0.73/$3.5, context 262144 → 262144
+- Alibaba · Qwen: Qwen3.7 Max: $1.25/$3.75 → $1.475/$4.425, context 1000000 → 1000000
+- Alibaba · Qwen: Qwen3.6 Max Preview: $1.04/$6.24 → $1.027/$6.162, context 262144 → 262144
+- Alibaba · Qwen: Qwen3.6 27B: $0.285/$2.4 → $0.3/$2.0, context 262144 → 262144
+- DeepSeek · DeepSeek: DeepSeek V4 Flash: $0.09/$0.18 → $0.14/$0.28, context 1048576 → 1048576
+- Moonshot AI · MoonshotAI: Kimi K2.6: $0.65/$3.41 → $0.6/$3.41, context 262144 → 262144
+- Zhipu AI · Z.ai: GLM 5.1: $0.966/$3.036 → $0.966/$3.036, context 202752 → 204800
+- Google · Google: Gemma 4 26B A4B : $0.06/$0.33 → $0.07/$0.34, context 262144 → 262144
+- Google · Google: Gemma 4 31B: $0.12/$0.35 → $0.1/$0.34, context 262144 → 262144
+- MiniMax · MiniMax: MiniMax M2.7: $0.18/$0.72 → $0.25/$1.0, context 204800 → 204800
+- Zhipu AI · Z.ai: GLM 5 Turbo: $1.2/$4.0 → $1.2/$4.0, context 262144 → 202752
+- Google · Google: Nano Banana 2 (Gemini 3.1 Flash Image Preview): $0.5/$3.0 → $0.5/$3.0, context 131072 → 65536
+- Google · Google: Gemini 3.1 Pro Preview Custom Tools: $2.0/$12.0 → $2.0/$12.0, context 1048756 → 1048576
+- Alibaba · Qwen: Qwen3.5 397B A17B: $0.385/$2.45 → $0.39/$2.34, context 256000 → 262144
+- MiniMax · MiniMax: MiniMax M2.5: $0.12/$0.48 → $0.15/$0.9, context 204800 → 204800
+- Zhipu AI · Z.ai: GLM 5: $0.6/$1.92 → $0.95/$2.55, context 202752 → 204800
+- Alibaba · Qwen: Qwen3 Coder Next: $0.11/$0.8 → $0.12/$0.8, context 262144 → 262144
+- Moonshot AI · MoonshotAI: Kimi K2.5: $0.375/$2.025 → $0.57/$2.85, context 262144 → 262144
+- Zhipu AI · Z.ai: GLM 4.7: $0.4/$1.75 → $0.4/$1.75, context 202752 → 204800
+- DeepSeek · DeepSeek: DeepSeek V3.2: $0.2288/$0.3432 → $0.269/$0.4, context 131072 → 163840
+- Alibaba · Qwen: Qwen3 VL 32B Instruct: $0.104/$0.416 → $0.104/$0.416, context 262144 → 131072
+- Alibaba · Qwen: Qwen3 VL 8B Thinking: $0.117/$1.365 → $0.18/$2.1, context 256000 → 131072
+- Alibaba · Qwen: Qwen3 VL 8B Instruct: $0.117/$0.455 → $0.117/$0.455, context 256000 → 262144
+- Alibaba · Qwen: Qwen3 VL 30B A3B Thinking: $0.13/$1.56 → $0.2/$2.4, context 131072 → 262144
+- Zhipu AI · Z.ai: GLM 4.6: $0.43/$1.74 → $0.5/$2.0, context 202752 → 204800
+- Alibaba · Qwen: Qwen3 VL 235B A22B Thinking: $0.26/$2.6 → $0.4/$4.0, context 131072 → 131072
+- Alibaba · Qwen: Qwen3 VL 235B A22B Instruct: $0.2/$0.88 → $0.21/$1.9, context 262144 → 262144
+- DeepSeek · DeepSeek: DeepSeek V3.1 Terminus: $0.27/$0.95 → $0.27/$1.0, context 163840 → 163840
+- Alibaba · Qwen: Qwen3 Next 80B A3B Thinking: $0.0975/$0.78 → $0.15/$1.2, context 262144 → 262144
+- Alibaba · Qwen: Qwen3 Next 80B A3B Instruct: $0.09/$1.1 → $0.1/$1.1, context 262144 → 262144
+- Alibaba · Qwen: Qwen Plus 0728 (thinking): $0.26/$0.78 → $0.4/$1.2, context 1000000 → 1000000
+- Alibaba · Qwen: Qwen3 30B A3B Thinking 2507: $0.13/$1.56 → $0.2/$2.4, context 131072 → 81920
+- DeepSeek · DeepSeek: DeepSeek V3.1: $0.21/$0.79 → $0.25/$0.95, context 163840 → 163840
+- OpenAI · OpenAI: gpt-oss-120b: $0.03/$0.15 → $0.037/$0.17, context 131072 → 131072
+- OpenAI · OpenAI: gpt-oss-20b: $0.029/$0.14 → $0.03/$0.13, context 131072 → 131072
+- Alibaba · Qwen: Qwen3 Coder 30B A3B Instruct: $0.07/$0.27 → $0.07/$0.28, context 160000 → 262144
+- Alibaba · Qwen: Qwen3 30B A3B Instruct 2507: $0.0481/$0.193 → $0.0481/$0.193, context 131072 → 262144
+- Alibaba · Qwen: Qwen3 235B A22B Thinking 2507: $0.1495/$1.495 → $0.23/$2.3, context 262144 → 262144
+- Alibaba · Qwen: Qwen3 Coder 480B A35B: $0.22/$1.8 → $0.3/$1.0, context 1048576 → 262144
+- Alibaba · Qwen: Qwen3 235B A22B Instruct 2507: $0.09/$0.1 → $0.09/$0.55, context 262144 → 262144
+- Mistral · Mistral: Mistral Small 3.2 24B: $0.075/$0.2 → $0.075/$0.2, context 128000 → 256000
+- MiniMax · MiniMax: MiniMax M1: $0.4/$2.2 → $0.55/$2.2, context 1000000 → 1000000
+- Meta · Meta: Llama Guard 4 12B: $0.18/$0.18 → $0.18/$0.18, context 163840 → 1048576
+- Alibaba · Qwen: Qwen3 14B: $0.1/$0.24 → $0.2275/$0.91, context 131702 → 131072
+- Meta · Meta: Llama 4 Maverick: $0.15/$0.6 → $0.2/$0.8, context 1048576 → 1048576
+- Meta · Meta: Llama 4 Scout: $0.1/$0.3 → $0.1/$0.3, context 10000000 → 1310720
+- DeepSeek · DeepSeek: DeepSeek V3 0324: $0.24/$0.9 → $0.27/$1.12, context 163840 → 163840
+- Google · Google: Gemma 3 27B: $0.08/$0.16 → $0.08/$0.45, context 131072 → 262144
+- Alibaba · Qwen: Qwen2.5 VL 72B Instruct: $0.8/$1.0 → $0.8/$1.0, context 131072 → 128000
+- DeepSeek · DeepSeek: R1 Distill Llama 70B: $0.8/$0.8 → $0.8/$0.8, context 128000 → 8192
+- DeepSeek · DeepSeek: DeepSeek V3: $0.2002/$0.8001 → $0.2574/$1.0287, context 131072 → 163840
+- Meta · Meta: Llama 3.3 70B Instruct: $0.1/$0.32 → $0.13/$0.4, context 131072 → 131072
+- Alibaba · Qwen2.5 Coder 32B Instruct: $0.66/$1.0 → $0.66/$1.0, context 128000 → 32768
+- Alibaba · Qwen: Qwen2.5 7B Instruct: $0.04/$0.1 → $0.1/$0.2, context 131072 → 32768
+- Meta · Meta: Llama 3.2 1B Instruct: $0.027/$0.201 → $0.027/$0.201, context 131072 → 60000
+- Alibaba · Qwen2.5 72B Instruct: $0.36/$0.4 → $0.36/$0.4, context 131072 → 32768
+- Meta · Meta: Llama 3.1 8B Instruct: $0.02/$0.03 → $0.05/$0.08, context 131072 → 131072
+- Mistral · Mistral: Mistral Nemo: $0.02/$0.03 → $0.019/$0.03, context 131072 → 131072
+
+## New models added — need your review (13)
+- DeepSeek · DeepSeek: DeepSeek V4 Flash 0731: $0.14/$0.28, context 1048576
+- Alibaba · Qwen: Qwen3.7 Flash: $0.03/$0.13, context 1000000
+- Anthropic · Claude Opus 5 (Fast): $10.0/$50.0, context 1000000
+- Anthropic · Claude Opus 5: $5.0/$25.0, context 1000000
+- Google · Google: Gemini 3.6 Flash: $1.5/$7.5, context 1048576
+- Google · Google: Gemini 3.5 Flash Lite: $0.3/$2.5, context 1048576
+- Moonshot AI · MoonshotAI: Kimi K3: $3.0/$15.0, context 1048576
+- OpenAI · OpenAI: GPT-5.6 Luna Pro: $0.1/$0.6, context 1050000
+- OpenAI · OpenAI: GPT-5.6 Luna: $0.1/$0.6, context 1050000
+- OpenAI · OpenAI: GPT-5.6 Terra Pro: $1.0/$6.0, context 1050000
+- OpenAI · OpenAI: GPT-5.6 Terra: $1.0/$6.0, context 1050000
+- OpenAI · OpenAI: GPT-5.6 Sol Pro: $5.0/$30.0, context 1050000
+- OpenAI · OpenAI: GPT-5.6 Sol: $5.0/$30.0, context 1050000
 
